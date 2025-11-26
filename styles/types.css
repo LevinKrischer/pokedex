@@ -1,3 +1,97 @@
+:root {
+    --fire-color: #e62828;
+    --normal-color: #9FA19F;
+    --water-color: #2980EF;
+    --grass-color: #3fa129;
+    --electric-color: #F9BF00;
+    --ice-color: #3FD8FF;
+    --fighting-color: #FF8000;
+    --poison-color: #9141CB;
+    --ground-color: #915121;
+    --flying-color: #81B8EE;
+    --psychic-color: #EF4179;
+    --bug-color: #91A119;
+    --rock-color: #B0A982;
+    --ghost-color: #704170;
+    --dragon-color: #5060E1;
+    --dark-color: #50413F;
+    --steel-color: #5FA0B6;
+    --fairy-color: #EF70EF;
+}
+
+.bg-fire {
+    background-color: var(--fire-color);
+}
+
+.bg-normal {
+    background-color: var(--normal-color);
+}
+
+.bg-water {
+    background-color: var(--water-color);
+}
+
+.bg-grass {
+    background-color: var(--grass-color);
+}
+
+.bg-electric {
+    background-color: var(--electric-color);
+}
+
+.bg-ice {
+    background-color: var(--ice-color);
+}
+
+.bg-fighting {
+    background-color: var(--fighting-color);
+}
+
+.bg-poison {
+    background-color: var(--poison-color);
+}
+
+.bg-ground {
+    background-color: var(--ground-color);
+}
+
+.bg-flying {
+    background-color: var(--flying-color);
+}
+
+.bg-psychic {
+    background-color: var(--psychic-color);
+}
+
+.bg-bug {
+    background-color: var(--bug-color);
+}
+
+.bg-rock {
+    background-color: var(--rock-color);
+}
+
+.bg-ghost {
+    background-color: var(--ghost-color);
+}
+
+.bg-dragon {
+    background-color: var(--dragon-color);
+}
+
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.bg-steel {
+    background-color: var(--steel-color);
+}
+
+.bg-fairy {
+    background-color: var(--fairy-color);
+}
+
+
 .typeFire {
     background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #e62828);
     background-color: rgb(197, 197, 197);
@@ -76,6 +170,8 @@
 
 .typePoison:hover {
     background-color: #9141CB;
+
+    h2 {color: var(--color-light);}
 }
 
 .typeGround {
@@ -86,6 +182,8 @@
 
 .typeGround:hover {
     background-color: #915121;
+
+    h2 {color: var(--color-light);}
 }
 
 .typeFlying {
@@ -136,6 +234,8 @@
 
 .typeGhost:hover {
     background-color: #704170;
+
+    h2 {color: var(--color-light);}
 }
 
 .typeDragon {
@@ -146,6 +246,8 @@
 
 .typeDragon:hover {
     background-color: #5060E1;
+
+    h2 {color: var(--color-light);}
 }
 
 .typeDark {
@@ -156,6 +258,8 @@
 
 .typeDark:hover {
     background-color: #50413F;
+
+    h2 {color: var(--color-light);}
 }
 
 .typeSteel {
@@ -177,3 +281,4 @@
 .typeFairy:hover {
     background-color: #EF70EF;
 }
+

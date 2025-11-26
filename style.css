@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -41,7 +43,7 @@ body {
 }
 
 .card:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .pCard {
@@ -76,10 +78,35 @@ body {
     color: white;
 }
 
-.marker {
-    font-size: 10px;
-    font-weight: bold;
-    border: 1px solid var(--color-grey);
-    border-radius: 8px;
-    padding: 4px 6px;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden; /* Hidden by default */
+  opacity: 0;
+  width: 80px;
+  background-color: var(--main-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid var(--color-darkgrey);
+  box-shadow: 1px 1px 1px var(--color-darkgrey);
+  border-radius: 6px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  margin-left: -40px; /* Use half of the width (130/2 = 65), to center the tooltip */
+  font-size: 12px;
+  z-index: 1; /* Ensure tooltip is displayed above content */
+  transition: all var(--transition);
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
