@@ -1,0 +1,24 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-a-center {
+    align-items: center;
+}
+
+.flex-j-center {
+    justify-content: center;
+}
+
+.flex-all-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-a-start {
+    align-items: flex-start;
+}
+
+.t-left {
+    text-align: left;
+}

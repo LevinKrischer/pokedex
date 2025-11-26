@@ -1,0 +1,179 @@
+.typeFire {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #e62828);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeFire:hover {
+    background-color: #e62828;
+}
+
+.typeNormal {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9FA19F);    
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeNormal:hover {
+    background-color: #9FA19F;
+}
+
+.typeWater {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #2980EF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeWater:hover {
+    background-color: #2980EF;
+}
+
+.typeGrass {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fa129);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeGrass:hover {
+    background-color: #3fa129;
+}
+
+.typeElectric {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #F9BF00);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeElectric:hover {
+    background-color: #F9BF00;
+}
+
+.typeIce {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3FD8FF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeIce:hover {
+    background-color: #3FD8FF;
+}
+
+.typeFighting {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #FF8000);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeFighting:hover {
+    background-color: #FF8000;
+}
+
+.typePoison {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9141CB);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typePoison:hover {
+    background-color: #9141CB;
+}
+
+.typeGround {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #915121);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeGround:hover {
+    background-color: #915121;
+}
+
+.typeFlying {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #81B8EE);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeFlying:hover {
+    background-color: #81B8EE;
+}
+
+.typePsychic {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #EF4179);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typePsychic:hover {
+    background-color: #EF4179;
+}
+
+.typeBug {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #91A119);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeBug:hover {
+    background-color: #91A119;
+}
+
+.typeRock {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #B0A982);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeRock:hover {
+    background-color: #B0A982;
+}
+
+.typeGhost {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #704170);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeGhost:hover {
+    background-color: #704170;
+}
+
+.typeDragon {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5060E1);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeDragon:hover {
+    background-color: #5060E1;
+}
+
+.typeDark {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #50413F);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeDark:hover {
+    background-color: #50413F;
+}
+
+.typeSteel {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5FA0B6);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeSteel:hover {
+    background-color: #5FA0B6;
+}
+
+.typeFairy {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #EF70EF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.typeFairy:hover {
+    background-color: #EF70EF;
+}

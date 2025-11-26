@@ -1,0 +1,84 @@
+:root {
+  --site-color: #0e1436;
+  --header-height: 100px;
+  --main-color: #F31D25;
+  --header-bg-color: #F31D25;
+  --footer-bg-color: #F31D25;
+  --footer-height: 80px;
+  --color-grey: #bebebe;
+  --color-darkgrey: #555555;
+  --color-light: #dadada;
+  --transition: 0.1s ease-in;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: #212121;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  background-color: var(--header-bg-color);
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.inner {
+  padding: 0 4%;
+}
+
+main .inner {
+  padding: 4% 4%;
+}
+
+.site {
+  height: calc(100vh - var(--footer-height));
+  background-color: var(--site-color);
+}
+
+footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  background-color: var(--footer-bg-color);
+}
+
+footer .inner p {
+  font-weight: 500;
+  color: #f7f6f1;
+}
+
+.dNone {
+  display: none;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: opacity var(--transition);
+}
