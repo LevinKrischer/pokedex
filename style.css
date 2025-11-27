@@ -36,18 +36,18 @@ body {
     border:1px solid #c8c7c763;
     box-shadow: 2px 2px 6px #ffffff83;
     transition: scale var(--transition);
+}
 
-    h2 {
+.card h2 {
         font-size: 20px;
     }
-}
-
-.card:hover {
-    scale: 1.05;
-}
 
 .pCard {
     max-width: 200px;
+}
+
+.pCard:hover {
+    scale: 1.05;
 }
 
 .pCardTypes {
@@ -63,19 +63,59 @@ body {
     box-shadow: 1px 1px 5px;
 }
 
+
+
 .pId {
     font-size: 10px;
     font-weight: bold;
     background-color: var(--main-color);
     padding:4px;
     margin: 0 auto 0 0;
-    border: 1px solid var(--color-darkgrey);
+    border: 1px solid var(--main-color);
+    box-shadow: 1px 1px 2px;
     border-radius: 8px;
     width: 48px;
 }
 
 .pId p {
     color: white;
+}
+
+.pInfo {
+    width: 80%;
+    height: 90vh;
+    max-width: 500px;
+    padding: 24px;
+}
+
+.pInfo .pId {
+    font-size: 14px;
+    width: 72px;
+    line-height: 1.5em;
+    margin:0;
+}
+
+.pinfoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.pInfo h2 {
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 3px var(--color-darkgrey);
+}
+
+.pCardImg {
+    max-width: 50%;
+}
+
+.pType {
+    width: 72px;
+    display: flex;
+    gap: 8px;
 }
 
 .tooltip {
@@ -109,4 +149,144 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.categorySelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    width: 100%;
+}
+
+.categoryBtn {
+    padding: 8px 16px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px var(--color-darkgrey);
+    position: relative;
+}
+
+.categoryBtn:hover, .active{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.active::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: var(--main-color) transparent transparent transparent;
+}
+
+.categoryInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+.categoryInfobox {
+    position: relative;
+    height: 100%;
+    max-height: 261px;
+    padding: 32px;
+    font-weight: bold;
+    overflow:auto;
+}
+
+.infoboxBackgroundImg {
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.15;
+    height: 100%;
+}
+
+.infoRow img {
+    max-width: 50px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index:1;
+}
+
+.basicInfoLeft {
+    width:50%;
+    text-align: left;
+}
+
+.basicInfoRight {
+    width:50%;
+    text-align: left;
+}
+
+.pageSelector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+}
+
+.pageSelectorBtnPrev {
+    content: "  ";
+    background-image: url(./assets/icons/arrow-left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 40px; 
+    height: 40px;   
+}
+
+.pageSelectorBtnNext {
+    content: "  ";
+    background-image: url(./assets/icons/arrow-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 40px;  
+    height: 40px;  
+}
+
+.pageCurrent {
+    width: 460px;
+    color: white;
+    text-shadow: 1px 1px 2px var(--color-darkgrey);
+}
+
+.pageCurrent b {
+    color: white;
+}
+
+.progressBar {
+    border-radius: 10px;
+    border:1px solid var(--color-darkgrey)
+}
+
+.progressBarInner {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 1px 0;
+}
+
+.evolutionName {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.evolutionArrowRight {
+    height: 40px;
 }

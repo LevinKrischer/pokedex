@@ -19,7 +19,7 @@
       <header id="header">
         <div class="wrapper">
           <div class="inner">
-            <img class="headerLogo" src="./assets/img/poke-title.png" alt="">
+            <img class="headerLogo" src="./assets/img/pex-logo.png" alt="" />
             <h1>Pokedex</h1>
           </div>
         </div>
@@ -27,303 +27,283 @@
       <main>
         <div class="wrapper">
           <div class="inner">
-            <article class="cardOverview">
+            <div>
+              <div class="wrapper">
+                <div class="inner">
+                  <section class="card pInfo pInfoTypeGrass" id="pInfoCard">
+                    <section class="pinfoHeader">
+                      <div class="pId">
+                        <p id="pIdInfoCard" class="t-center"># 1</p>
+                      </div>
+                      <h2 class="pInfoHeadline" id="pNameInfoCard">Bulbasour</h2>
+                      <div class="pType">
+                        <div class="tooltip pCardTypes" id="ttTypeInfoCard">
+                          <img src="./assets/icons/types/grass.png" alt="Icon of type grass" class="type"/>
+                          <span class="tooltiptext bg-grass">grass</span>
+                        </div>
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/poison.png" alt="Icon of type poison" class="type"/>
+                          <span class="tooltiptext bg-poison">poison</span>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="pCardImg">
+                      <img id="pokeImgHeaderInfoCard" src="./assets/img/1.png" alt="Picture of Bulbasour" />
+                    </section>
+                    <hr>
+                    <section class="categoryInfoSection">
+                      <section class="categorySelector">
+                        <button id="categoryBtnBasicInfoCard" class="categoryBtn active">Basic Info</button>
+                        <button id="categoryBtnBaseStatsInfoCard" class="categoryBtn">Base Stats</button>
+                        <button id="categoryBtnAttacksInfoCard" class="categoryBtn">Attacks</button>
+                        <button id="categoryBtnEvolutionInfoCard" class="categoryBtn">Evolution</button>
+                      </section>
+                      <section id="categoryBasicContent" class="card categoryInfobox">
+                        <img class="infoboxBackgroundImg" src="./assets/img/pokeball.png" alt="">
+                        <div class="infoRow">
+                          <div id="pokeHeightKeyInfoCard" class="basicInfoLeft">Height:</div>
+                          <div id="pokeHeightValueInfoCard" class="basicInfoRight">32cm</div>
+                        </div>
+                        <div class="infoRow">
+                          <div id="pokeWeightKeyInfoCard" class="basicInfoLeft">Weight:</div>
+                          <div id="pokeWeightValueInfoCard" class="basicInfoRight">50cm</div>
+                        </div>
+                        <div class="infoRow">
+                          <div id="pokeSpeciesKeyInfoCard" class="basicInfoLeft">Species:</div>
+                          <div id="pokeSpeciesValueInfoCard" class="basicInfoRight">Bulbasaur</div>
+                        </div>
+                        <div class="infoRow">
+                          <div id="pokeAbilitiesKeyInfoCard" class="basicInfoLeft">Abilities:</div>
+                          <div id="pokeAbilitiesValueInfoCard" class="basicInfoRight">Overgrow, Chlorophyll</div>
+                        </div>
+                      </section>
+                    </section>
+                    <section class="pageSelector">
+                      <div id="pageSelectorBtnPrev" class="pageSelectorBtnPrev" alt=""></div>
+                      <div class="pageCurrent"><b id="currentPage">1013</b> von <span id="totalPokemonsLoaded">1013</span></div>
+                      <div id="pageSelectorBtnNext" class="pageSelectorBtnNext" alt=""></div>
+                    </section>
+                  </section>
+
+
+                  
+                  <section class="card pInfo pInfoTypeGrass">
+                    <section class="pinfoHeader">
+                      <div class="pId">
+                        <p class="t-center"># 1</p>
+                      </div>
+                      <h2 class="pInfoHeadline">Bulbasour</h2>
+                      <div class="pType">
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/grass.png" alt="Icon of type grass" class="type"/>
+                          <span class="tooltiptext bg-grass">grass</span>
+                        </div>
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/poison.png" alt="Icon of type poison" class="type"/>
+                          <span class="tooltiptext bg-poison">poison</span>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="pCardImg">
+                      <img src="./assets/img/1.png" alt="Picture of Bulbasour" />
+                    </section>
+                    <hr>
+                    <section class="categoryInfoSection">
+                      <section class="categorySelector">
+                        <button class="categoryBtn">Basic Info</button>
+                        <button class="categoryBtn active">Base Stats</button>
+                        <button class="categoryBtn">Attacks</button>
+                        <button class="categoryBtn">Evolution</button>
+                      </section>
+                      <section id="categoryStatsBasicContent" class="card categoryInfobox">
+                        <img  class="infoboxBackgroundImg" src="./assets/img/pokeball.png" alt="">
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">hp:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:45%">45</div>
+                          </div>
+                        </div>
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">attack:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:49%">49</div>
+                          </div>
+                        </div>
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">defense:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:49%">49</div>
+                          </div>
+                        </div>
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">special attack:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:65%">65</div>
+                          </div>
+                        </div>
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">special defense:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:65%">65</div>
+                          </div>
+                        </div>
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">speed:</div>
+                          <div class="basicInfoRight progressBar">
+                            <div class="progressBarInner" style="width:45%">45</div>
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+                    <section class="pageSelector">
+                      <div class="pageSelectorBtnPrev" alt=""></div>
+                      <div class="pageCurrent"><b>1013</b> von 1013</div>
+                      <div class="pageSelectorBtnNext" alt=""></div>
+                    </section>
+                  </section>
+                  <section class="card pInfo pInfoTypeGrass">
+                    <section class="pinfoHeader">
+                      <div class="pId">
+                        <p class="t-center"># 1</p>
+                      </div>
+                      <h2 class="pInfoHeadline">Bulbasour</h2>
+                      <div class="pType">
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/grass.png" alt="Icon of type grass" class="type"/>
+                          <span class="tooltiptext bg-grass">grass</span>
+                        </div>
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/poison.png" alt="Icon of type poison" class="type"/>
+                          <span class="tooltiptext bg-poison">poison</span>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="pCardImg">
+                      <img src="./assets/img/1.png" alt="Picture of Bulbasour" />
+                    </section>
+                    <hr>
+                    <section class="categoryInfoSection">
+                      <section class="categorySelector">
+                        <button class="categoryBtn">Basic Info</button>
+                        <button class="categoryBtn">Base Stats</button>
+                        <button class="categoryBtn active">Attacks</button>
+                        <button class="categoryBtn">Evolution</button>
+                      </section>
+                      <section id="categoryAttacksContent" class="card categoryInfobox">
+                        <img class="infoboxBackgroundImg" src="./assets/img/pokeball.png" alt="">
+                        <div class="infoRow">
+                          <div class="basicInfoLeft">Razor wind</div>
+                          <div class="basicInfoRight">Level 0</div>
+                        </div>
+                      </section>
+                    </section>
+                    <section class="pageSelector">
+                      <div class="pageSelectorBtnPrev" alt=""></div>
+                      <div class="pageCurrent"><b>1013</b> von 1013</div>
+                      <div class="pageSelectorBtnNext" alt=""></div>
+                    </section>
+                  </section>
+                  <section class="card pInfo pInfoTypeGrass">
+                    <section class="pinfoHeader">
+                      <div class="pId">
+                        <p class="t-center"># 1</p>
+                      </div>
+                      <h2 class="pInfoHeadline">Bulbasour</h2>
+                      <div class="pType">
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/grass.png" alt="Icon of type grass" class="type"/>
+                          <span class="tooltiptext bg-grass">grass</span>
+                        </div>
+                        <div class="tooltip pCardTypes">
+                          <img src="./assets/icons/types/poison.png" alt="Icon of type poison" class="type"/>
+                          <span class="tooltiptext bg-poison">poison</span>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="pCardImg">
+                      <img src="./assets/img/1.png" alt="Picture of Bulbasour" />
+                    </section>
+                    <hr>
+                    <section class="categoryInfoSection">
+                      <section class="categorySelector">
+                        <button class="categoryBtn">Basic Info</button>
+                        <button class="categoryBtn">Base Stats</button>
+                        <button class="categoryBtn">Attacks</button>
+                        <button class="categoryBtn active">Evolution</button>
+                      </section>
+                      <section id="categoryEvolutionContent" class="card categoryInfobox flex-a-center flex-j-center">
+                        <img class="infoboxBackgroundImg" src="./assets/img/pokeball.png" alt="">
+                        <div class="infoRow">
+                          <div class="evolutionInfo">
+                            <img src="./assets/img/1.gif" alt="">
+                            <p class="evolutionName">Bulbasaur</p>
+                          </div>
+                          <img class="evolutionArrowRight" src="./assets/icons/double-arrow-right.png" alt="">
+                          <div class="evolutionInfo">
+                            <img src="./assets/img/1.gif" alt="">
+                            <p class="evolutionName">Bulbasaur</p>
+                          </div>
+                          <img class="evolutionArrowRight" src="./assets/icons/double-arrow-right.png" alt="">
+                          <div class="evolutionInfo">
+                            <img src="./assets/img/1.gif" alt="">
+                            <p class="evolutionName">Bulbasaur</p>
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+                    <section class="pageSelector">
+                      <div class="pageSelectorBtnPrev" alt=""></div>
+                      <div class="pageCurrent"><b>1013</b> von 1013</div>
+                      <div class="pageSelectorBtnNext" alt=""></div>
+                    </section>
+                  </section>
+                </div>
+              </div>
+            </div>
+
+
+            
+            <article id="cardOverview" class="cardOverview">
               <section class="card pCard typeGrass">
                 <div class="pId">
-                  <p class="t-center"># 1</p>
+                  <p id="idOverview" class="t-center"># 1</p>
                 </div>
-                <div class="pCardImg">
+                <div id="pokeImgOverview" class="pCardImg">
                   <img src="./assets/img/1.png" alt="" />
                 </div>
-                <h2>Bulbasour</h2>
+                <h2 id="pokeNameOverview">Bulbasour</h2>
                 <section class="pCardTypes">
-                  <div class="tooltip">
-                    <img src="./assets/icons/types/grass.png" alt="" class="type"/>
+                  <div id="typeOverview" class="tooltip">
+                    <img
+                      src="./assets/icons/types/grass.png"
+                      alt=""
+                      class="type"
+                    />
                     <span class="tooltiptext bg-grass">grass</span>
                   </div>
                   <div class="tooltip">
-                    <img src="./assets/icons/types/poison.png" alt="" class="type"/>
+                    <img
+                      src="./assets/icons/types/poison.png"
+                      alt=""
+                      class="type"
+                    />
                     <span class="tooltiptext bg-poison">poison</span>
                   </div>
-                </section>
-              </section>
-              <section class="card pCard typeFire">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <div class="tooltip">
-                    <img src="./assets/icons/types/fire.png" alt="" class="type"/>
-                    <span class="tooltiptext bg-fire">fire</span>
-                  </div>
-                </section>
-              </section>
-              <section class="card pCard typeNormal">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <div class="tooltip">
-                    <img src="./assets/icons/types/normal.png" alt="" class="type"/>
-                    <span class="tooltiptext bg-normal">normal</span>
-                  </div>
-                </section>
-              </section>
-              <section class="card pCard typeWater">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/water.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeElectric">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/electric.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeIce">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/electric.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeFighting">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/fighting.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typePoison">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/poison.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeGround">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/ground.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeFlying">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/flying.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typePsychic">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/psychic.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeBug">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img src="./assets/icons/types/bug.png" alt="" class="type" />
-                </section>
-              </section>
-              <section class="card pCard typeRock">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/rock.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeGhost">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/ghost.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeDragon">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/dragon.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeDark">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/dark.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeSteel">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/steel.png"
-                    alt=""
-                    class="type"
-                  />
-                </section>
-              </section>
-              <section class="card pCard typeFairy">
-                <div class="pId">
-                  <p class="t-center"># 1</p>
-                </div>
-                <div class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2>Bulbasour</h2>
-                <section class="pCardTypes">
-                  <img
-                    src="./assets/icons/types/fairy.png"
-                    alt=""
-                    class="type"
-                  />
                 </section>
               </section>
             </article>
           </div>
           <div class="inner pt-0 d-flex flex-all-center">
-            <button class="btn">load more</button>
+            <button id="loadMoreBtn" onload="loadMoreCards()" class="btn">load more</button>
           </div>
         </div>
       </main>
     </div>
     <footer>
       <div class="wrapper">
-        <div class="inner"></div>
+        <div class="inner">
+          <p>Copyright 2025 - Levin Krischer</p>
+        </div>
       </div>
     </footer>
   </body>

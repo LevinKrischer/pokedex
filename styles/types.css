@@ -282,3 +282,110 @@
     background-color: #EF70EF;
 }
 
+.pInfoTypeFire {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #e62828);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeNormal {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9FA19F);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeWater {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #2980EF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeGrass {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fa129);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeElectric {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #F9BF00);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeIce {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3FD8FF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeFighting {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #FF8000);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypePoison {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9141CB);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeGround {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #915121);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeFlying {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #81B8EE);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypePsychic {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #EF4179);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeBug {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #91A119);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeRock {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #B0A982);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeGhost {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #704170);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeDragon {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5060E1);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeDark {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #50413F);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeSteel {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5FA0B6);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}
+
+.pInfoTypeFairy {
+    background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #EF70EF);
+    background-color: rgb(197, 197, 197);
+    transition: all var(--transition);
+}

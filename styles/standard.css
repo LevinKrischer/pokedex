@@ -35,6 +35,11 @@ h1 {
   left: 20px;
 }
 
+hr {
+  width:100%;
+  color:#212121;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -83,8 +88,17 @@ footer {
   background-color: var(--footer-bg-color);
 }
 
+footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 footer .inner {
   padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .inner p {
