@@ -19,3 +19,4 @@ function getTemplateCardTypes(indexCard, indexTypes, type) {
                           <span class="tooltiptext bg-${type}">${type}</span>
                         </div>`;
 }
+

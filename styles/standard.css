@@ -40,6 +40,13 @@ hr {
   color:#212121;
 }
 
+button {
+  border:none;
+  background-color: unset;
+  width:unset;
+  height:unset;
+}
+
 button:hover {
     cursor: pointer;
 }

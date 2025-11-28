@@ -112,7 +112,6 @@ body {
 
 .pInfoDialog {
     opacity: 0;
-    display: none;
     transform: translateY(100px);
     transition: all ease-in 0.3s;
     z-index: 3;
@@ -122,11 +121,14 @@ body {
 
 .pInfoDialog.opened {
     opacity: 1;
-    display: block;
     transform: translateY(0px);
+    transition: all ease-in 0.3s;
 }
 
-
+dialog {
+    background: none;
+    border:none;
+}
 
 .pCardImg {
     max-width: 50%;
@@ -276,6 +278,10 @@ body {
     object-fit: cover;
     width: 40px;  
     height: 40px;  
+}
+
+.pageSelectorBtnPrev:hover, .pageSelectorBtnNext:hover {
+    filter: brightness(80%);
 }
 
 .pageCurrent {

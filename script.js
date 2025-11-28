@@ -77,9 +77,16 @@ function capitalize(string) {
 }
 
 function openPokemonInfo(indexCard) {
-  currentIndex = indexCard;
-  const galleryFullsize = document.getElementById("galleryFullsize");
-  galleryFullsize.innerHTML = galleryFullsizeContent(i);
-  galleryFullsize.showModal();
-  galleryFullsize.classList.add("opened");
+    const currentPokemon = indexCard;
+    const pCardDialog = document.getElementById('pInfoDialog')
+    pCardDialog.showModal();
+    pCardDialog.classList.add("opened");
 }
+
+// function openGalleryFullsize(i) {
+//   currentI = i;
+//   const galleryFullsize = document.getElementById("galleryFullsize");
+//   galleryFullsize.innerHTML = galleryFullsizeContent(i);
+//   galleryFullsize.showModal();
+//   galleryFullsize.classList.add("opened");
+// }

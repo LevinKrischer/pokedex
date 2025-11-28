@@ -24,7 +24,7 @@
       </header>
       <main>
         <div class="wrapper">
-          <dialog class="pInfoDialog">
+          <dialog class="pInfoDialog" id="pInfoDialog">
             <section class="card pInfo pInfoTypeGrass" id="pInfoCard">
               <section class="pinfoHeader">
                 <div class="pId">
@@ -62,7 +62,7 @@
                 <section class="categorySelector">
                   <button
                     id="categoryBtnBasicInfoCard"
-                    class="categoryBtn active"
+                    class="categoryBtn active" autofocus
                   >
                     Basic Info
                   </button>
@@ -117,22 +117,25 @@
                 </section>
               </section>
               <section class="pageSelector">
-                <div
+                <button
                   id="pageSelectorBtnPrev"
                   class="pageSelectorBtnPrev"
                   alt=""
-                ></div>
+                ></button>
                 <div class="pageCurrent">
                   <b id="currentPage">1013</b> von
                   <span class="f-white" id="totalPokemonsLoaded">1013</span>
                 </div>
-                <div
+                <button
                   id="pageSelectorBtnNext"
                   class="pageSelectorBtnNext"
                   alt=""
-                ></div>
+                ></button>
               </section>
             </section>
+
+
+
             <!-- <section class="card pInfo pInfoTypeGrass">
                     <section class="pinfoHeader">
                       <div class="pId">
