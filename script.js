@@ -21,17 +21,16 @@ async function loadMorePokemons() {
   }
 }
 
-// 2. Nur neue Karten rendern
 function renderMoreCards() {
   const cardContent = document.getElementById('cardOverview');
   const startIndex = loadedPokemons;
 
   for (let indexCard = startIndex; indexCard < allPokemons.length; indexCard++) {
     const pokemon = allPokemons[indexCard];
-    const imgHomeShiny = pokemon.sprites.other.home.front_shiny;
+    const imgHome = pokemon.sprites.other.home.front_default;
     const nameCap = capitalize(pokemon.species.name);
 
-    cardContent.innerHTML += getTemplateCardOverview(indexCard, nameCap, imgHomeShiny, pokemon);
+    cardContent.innerHTML += getTemplateCardOverview(indexCard, nameCap, imgHome, pokemon);
     addTypesToCardOverview(indexCard);
   }
   loadedPokemons = allPokemons.length;
@@ -45,11 +44,11 @@ function renderCards() {
 
     for (let indexCard = 0; indexCard < allPokemons.length; indexCard++) {
         const pokemon = allPokemons[indexCard];
-        const imgHomeShiny = pokemon.sprites.other.home.front_shiny;
+        const imgHome = pokemon.sprites.other.home.front_default;
 
         const nameCap = capitalize(pokemon.species.name);
 
-        cardContent.innerHTML += getTemplateCardOverview(indexCard, nameCap, imgHomeShiny, pokemon);
+        cardContent.innerHTML += getTemplateCardOverview(indexCard, nameCap, imgHome, pokemon);
         addTypesToCardOverview(indexCard);
     }
     loadedPokemons = allPokemons.length;
@@ -69,7 +68,7 @@ function checkLoadMoreButton() {
   const button = document.getElementById('loadMoreBtn');
   if (loadedPokemons >= 50) {
     button.disabled = true;
-    button.textContent = "Alle Pokémon geladen :-)";
+    button.textContent = "no more Pokémon available";
   }
 }
 
@@ -77,5 +76,10 @@ function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-
-
+function openPokemonInfo(indexCard) {
+  currentIndex = indexCard;
+  const galleryFullsize = document.getElementById("galleryFullsize");
+  galleryFullsize.innerHTML = galleryFullsizeContent(i);
+  galleryFullsize.showModal();
+  galleryFullsize.classList.add("opened");
+}

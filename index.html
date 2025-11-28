@@ -25,68 +25,116 @@
       </header>
       <main>
         <div class="wrapper">
-          <div class="inner">
-            <!-- <div>
-              <div class="wrapper">
-                <div class="inner">
-                  <section class="card pInfo pInfoTypeGrass" id="pInfoCard">
-                    <section class="pinfoHeader">
-                      <div class="pId">
-                        <p id="pIdInfoCard" class="t-center"># 1</p>
-                      </div>
-                      <h2 class="pInfoHeadline" id="pNameInfoCard">Bulbasour</h2>
-                      <div class="pType">
-                        <div class="tooltip pCardTypes" id="ttTypeInfoCard">
-                          <img src="./assets/icons/types/grass.png" alt="Icon of type grass" class="type"/>
-                          <span class="tooltiptext bg-grass">grass</span>
-                        </div>
-                        <div class="tooltip pCardTypes">
-                          <img src="./assets/icons/types/poison.png" alt="Icon of type poison" class="type"/>
-                          <span class="tooltiptext bg-poison">poison</span>
-                        </div>
-                      </div>
-                    </section>
-                    <section class="pCardImg">
-                      <img id="pokeImgHeaderInfoCard" src="./assets/img/1.png" alt="Picture of Bulbasour" />
-                    </section>
-                    <hr>
-                    <section class="categoryInfoSection">
-                      <section class="categorySelector">
-                        <button id="categoryBtnBasicInfoCard" class="categoryBtn active">Basic Info</button>
-                        <button id="categoryBtnBaseStatsInfoCard" class="categoryBtn">Base Stats</button>
-                        <button id="categoryBtnAttacksInfoCard" class="categoryBtn">Attacks</button>
-                        <button id="categoryBtnEvolutionInfoCard" class="categoryBtn">Evolution</button>
-                      </section>
-                      <section id="categoryBasicContent" class="card categoryInfobox">
-                        <img class="infoboxBackgroundImg" src="./assets/img/pokeball.png" alt="">
-                        <div class="infoRow">
-                          <div id="pokeHeightKeyInfoCard" class="basicInfoLeft">Height:</div>
-                          <div id="pokeHeightValueInfoCard" class="basicInfoRight">32cm</div>
-                        </div>
-                        <div class="infoRow">
-                          <div id="pokeWeightKeyInfoCard" class="basicInfoLeft">Weight:</div>
-                          <div id="pokeWeightValueInfoCard" class="basicInfoRight">50cm</div>
-                        </div>
-                        <div class="infoRow">
-                          <div id="pokeSpeciesKeyInfoCard" class="basicInfoLeft">Species:</div>
-                          <div id="pokeSpeciesValueInfoCard" class="basicInfoRight">Bulbasaur</div>
-                        </div>
-                        <div class="infoRow">
-                          <div id="pokeAbilitiesKeyInfoCard" class="basicInfoLeft">Abilities:</div>
-                          <div id="pokeAbilitiesValueInfoCard" class="basicInfoRight">Overgrow, Chlorophyll</div>
-                        </div>
-                      </section>
-                    </section>
-                    <section class="pageSelector">
-                      <div id="pageSelectorBtnPrev" class="pageSelectorBtnPrev" alt=""></div>
-                      <div class="pageCurrent"><b id="currentPage">1013</b> von <span class="f-white" id="totalPokemonsLoaded">1013</span></div>
-                      <div id="pageSelectorBtnNext" class="pageSelectorBtnNext" alt=""></div>
-                    </section>
-                  </section>
-
-
-                  
-                  <section class="card pInfo pInfoTypeGrass">
+          <dialog class="pInfoDialog">
+            <section class="card pInfo pInfoTypeGrass" id="pInfoCard">
+              <section class="pinfoHeader">
+                <div class="pId">
+                  <p id="pIdInfoCard" class="t-center"># 1</p>
+                </div>
+                <h2 class="pInfoHeadline" id="pNameInfoCard">Bulbasour</h2>
+                <div class="pType">
+                  <div class="tooltip pCardTypes" id="ttTypeInfoCard">
+                    <img
+                      src="./assets/icons/types/grass.png"
+                      alt="Icon of type grass"
+                      class="type"
+                    />
+                    <span class="tooltiptext bg-grass">grass</span>
+                  </div>
+                  <div class="tooltip pCardTypes">
+                    <img
+                      src="./assets/icons/types/poison.png"
+                      alt="Icon of type poison"
+                      class="type"
+                    />
+                    <span class="tooltiptext bg-poison">poison</span>
+                  </div>
+                </div>
+              </section>
+              <section class="pCardImg">
+                <img
+                  id="pokeImgHeaderInfoCard"
+                  src="./assets/img/1.png"
+                  alt="Picture of Bulbasour"
+                />
+              </section>
+              <hr />
+              <section class="categoryInfoSection">
+                <section class="categorySelector">
+                  <button
+                    id="categoryBtnBasicInfoCard"
+                    class="categoryBtn active"
+                  >
+                    Basic Info
+                  </button>
+                  <button id="categoryBtnBaseStatsInfoCard" class="categoryBtn">
+                    Base Stats
+                  </button>
+                  <button id="categoryBtnAttacksInfoCard" class="categoryBtn">
+                    Attacks
+                  </button>
+                  <button id="categoryBtnEvolutionInfoCard" class="categoryBtn">
+                    Evolution
+                  </button>
+                </section>
+                <section id="categoryBasicContent" class="card categoryInfobox">
+                  <img
+                    class="infoboxBackgroundImg"
+                    src="./assets/img/pokeball.png"
+                    alt=""
+                  />
+                  <div class="infoRow">
+                    <div id="pokeHeightKeyInfoCard" class="basicInfoLeft">
+                      Height:
+                    </div>
+                    <div id="pokeHeightValueInfoCard" class="basicInfoRight">
+                      32cm
+                    </div>
+                  </div>
+                  <div class="infoRow">
+                    <div id="pokeWeightKeyInfoCard" class="basicInfoLeft">
+                      Weight:
+                    </div>
+                    <div id="pokeWeightValueInfoCard" class="basicInfoRight">
+                      50cm
+                    </div>
+                  </div>
+                  <div class="infoRow">
+                    <div id="pokeSpeciesKeyInfoCard" class="basicInfoLeft">
+                      Species:
+                    </div>
+                    <div id="pokeSpeciesValueInfoCard" class="basicInfoRight">
+                      Bulbasaur
+                    </div>
+                  </div>
+                  <div class="infoRow">
+                    <div id="pokeAbilitiesKeyInfoCard" class="basicInfoLeft">
+                      Abilities:
+                    </div>
+                    <div id="pokeAbilitiesValueInfoCard" class="basicInfoRight">
+                      Overgrow, Chlorophyll
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <section class="pageSelector">
+                <div
+                  id="pageSelectorBtnPrev"
+                  class="pageSelectorBtnPrev"
+                  alt=""
+                ></div>
+                <div class="pageCurrent">
+                  <b id="currentPage">1013</b> von
+                  <span class="f-white" id="totalPokemonsLoaded">1013</span>
+                </div>
+                <div
+                  id="pageSelectorBtnNext"
+                  class="pageSelectorBtnNext"
+                  alt=""
+                ></div>
+              </section>
+            </section>
+            <!-- <section class="card pInfo pInfoTypeGrass">
                     <section class="pinfoHeader">
                       <div class="pId">
                         <p class="t-center"># 1</p>
@@ -254,16 +302,16 @@
                       <div class="pageSelectorBtnPrev" alt=""></div>
                       <div class="pageCurrent"><b>1013</b> von 1013</div>
                       <div class="pageSelectorBtnNext" alt=""></div>
-                    </section>
-                  </section>
-                </div>
-              </div>
-            </div> -->
-            <article id="cardOverview" class="cardOverview">
-            </article>
+                    </section> -->
+            <!-- </section> -->
+          </dialog>
+          <div class="inner">
+            <article id="cardOverview" class="cardOverview"></article>
           </div>
           <div class="inner pt-0 d-flex flex-all-center">
-            <button id="loadMoreBtn" onclick="renderMoreCards()" class="btn">load more</button>
+            <button id="loadMoreBtn" onclick="renderMoreCards()" class="btn">
+              load more
+            </button>
           </div>
         </div>
       </main>

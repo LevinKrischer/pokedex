@@ -44,6 +44,7 @@ body {
 
 .pCard {
     max-width: 200px;
+    cursor: pointer;
 }
 
 .pCard:hover {
@@ -82,7 +83,7 @@ body {
 }
 
 .pInfo {
-    width: 80%;
+    width: 100%;
     height: 90vh;
     max-width: 500px;
     padding: 24px;
@@ -107,6 +108,25 @@ body {
     color: white;
     text-shadow: 2px 2px 3px var(--color-darkgrey);
 }
+
+
+.pInfoDialog {
+    opacity: 0;
+    display: none;
+    transform: translateY(100px);
+    transition: all ease-in 0.3s;
+    z-index: 3;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.pInfoDialog.opened {
+    opacity: 1;
+    display: block;
+    transform: translateY(0px);
+}
+
+
 
 .pCardImg {
     max-width: 50%;
