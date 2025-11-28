@@ -44,6 +44,17 @@ button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+  background-color: var(--color-darkgrey);
+}
+
+button:disabled:hover {
+  scale: unset;
+  background-color: var(--color-darkgrey);
+  color:white;
+  cursor:auto;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;

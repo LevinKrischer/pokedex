@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/types.css" />
-    <link rel="stylesheet" href="./assets/fonts.css" />
     <link rel="icon" href="./assets/img/favicon.png" />
     <script defer src="./scripts/db.js"></script>
     <script defer src="./script.js"></script>
     <script src="./scripts/templates.js"></script>
   </head>
-  <body>
+  <body onload="getPokemonData()">
     <div class="site">
       <header id="header">
         <div class="wrapper">
@@ -27,7 +26,7 @@
       <main>
         <div class="wrapper">
           <div class="inner">
-            <div>
+            <!-- <div>
               <div class="wrapper">
                 <div class="inner">
                   <section class="card pInfo pInfoTypeGrass" id="pInfoCard">
@@ -80,7 +79,7 @@
                     </section>
                     <section class="pageSelector">
                       <div id="pageSelectorBtnPrev" class="pageSelectorBtnPrev" alt=""></div>
-                      <div class="pageCurrent"><b id="currentPage">1013</b> von <span id="totalPokemonsLoaded">1013</span></div>
+                      <div class="pageCurrent"><b id="currentPage">1013</b> von <span class="f-white" id="totalPokemonsLoaded">1013</span></div>
                       <div id="pageSelectorBtnNext" class="pageSelectorBtnNext" alt=""></div>
                     </section>
                   </section>
@@ -259,42 +258,12 @@
                   </section>
                 </div>
               </div>
-            </div>
-
-
-            
+            </div> -->
             <article id="cardOverview" class="cardOverview">
-              <section class="card pCard typeGrass">
-                <div class="pId">
-                  <p id="idOverview" class="t-center"># 1</p>
-                </div>
-                <div id="pokeImgOverview" class="pCardImg">
-                  <img src="./assets/img/1.png" alt="" />
-                </div>
-                <h2 id="pokeNameOverview">Bulbasour</h2>
-                <section class="pCardTypes">
-                  <div id="typeOverview" class="tooltip">
-                    <img
-                      src="./assets/icons/types/grass.png"
-                      alt=""
-                      class="type"
-                    />
-                    <span class="tooltiptext bg-grass">grass</span>
-                  </div>
-                  <div class="tooltip">
-                    <img
-                      src="./assets/icons/types/poison.png"
-                      alt=""
-                      class="type"
-                    />
-                    <span class="tooltiptext bg-poison">poison</span>
-                  </div>
-                </section>
-              </section>
             </article>
           </div>
           <div class="inner pt-0 d-flex flex-all-center">
-            <button id="loadMoreBtn" onload="loadMoreCards()" class="btn">load more</button>
+            <button id="loadMoreBtn" onclick="renderMoreCards()" class="btn">load more</button>
           </div>
         </div>
       </main>
