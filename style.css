@@ -1,143 +1,157 @@
-body {
-    font-family: 'Montserrat', Verdana, Tahoma, sans-serif ;
+* {
+  font-family: "Montserrat", Verdana, Tahoma, sans-serif;
 }
 
 .cardOverview {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .pCardImgSmall {
-    width: 100%;
+  width: 100%;
 }
 
 .pCardImg {
-    width: 100%;
+  width: 100%;
+}
+
+.pInfo .pCardImg {
+  width: 100%;
+  height: 225px;
 }
 
 .pCardImg img {
-    width: 100%;
+  width: 100%;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 16px 16px 16px 16px;
-    text-align: center;
-    width: 100%;
-    border:1px solid #c8c7c763;
-    box-shadow: 2px 2px 6px #ffffff83;
-    transition: scale var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px 16px 16px 16px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #c8c7c763;
+  box-shadow: 2px 2px 6px #ffffff83;
+  transition: scale var(--transition);
 }
 
 .card h2 {
-        font-size: 20px;
-    }
+  font-size: 20px;
+}
 
 .pCard {
-    max-width: 200px;
-    cursor: pointer;
+  max-width: 200px;
+  cursor: pointer;
 }
 
 .pCard:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .pCardTypes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .pCardTypes img {
-    border-radius: 50%;
-    width: 32px;
-    box-shadow: 1px 1px 5px;
+  border-radius: 50%;
+  width: 32px;
+  box-shadow: 1px 1px 5px;
 }
 
-
-
 .pId {
-    font-size: 10px;
-    font-weight: bold;
-    background-color: var(--main-color);
-    padding:4px;
-    margin: 0 auto 0 0;
-    border: 1px solid var(--main-color);
-    box-shadow: 1px 1px 2px;
-    border-radius: 8px;
-    width: 48px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 4px;
+  margin: 0 auto 0 0;
+  border: 1px solid var(--main-color);
+  box-shadow: 1px 1px 2px;
+  border-radius: 8px;
+  width: 48px;
+}
+
+.pinfoHeader .pId {
+  height: 32px;
 }
 
 .pId p {
-    color: white;
+  color: white;
 }
 
 .pInfo {
-    width: 100%;
-    height: 90vh;
-    max-width: 500px;
-    padding: 24px;
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
 }
 
 .pInfo .pId {
-    font-size: 14px;
-    width: 72px;
-    line-height: 1.5em;
-    margin:0;
+  font-size: 14px;
+  width: 72px;
+  line-height: 1.5em;
+  margin: 0;
 }
 
 .pinfoHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .pInfo h2 {
-    font-size: 28px;
-    color: white;
-    text-shadow: 2px 2px 3px var(--color-darkgrey);
-}
-
-
-.pInfoDialog {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all ease-in 0.3s;
-    z-index: 3;
-    margin: 0 auto;
-    max-width: 500px;
-}
-
-.pInfoDialog.opened {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all ease-in 0.3s;
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 2px 3px var(--color-darkgrey);
 }
 
 dialog {
-    background: none;
-    border:none;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  z-index: 3;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 16px var(--color-light);
+  padding: 0;
+  transform: translate(-50%, -40%);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+dialog.opened {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.dialogContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* volle Höhe */
 }
 
 .pCardImg {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .pType {
-    width: 72px;
-    display: flex;
-    gap: 8px;
+  width: 72px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .tooltip {
@@ -174,25 +188,28 @@ dialog {
 }
 
 .categorySelector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:8px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
 }
 
 .categoryBtn {
-    padding: 8px 16px;
-    border: 2px solid var(--main-color);
-    border-radius: 20px;
-    font-weight: bold;
-    box-shadow: 1px 1px 1px var(--color-darkgrey);
-    position: relative;
+  padding: 8px 16px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px var(--color-darkgrey);
+  position: relative;
+  transition: all var(--transition);
 }
 
-.categoryBtn:hover, .active{
-    background-color: var(--main-color);
-    color: white;
+.categoryBtn:hover,
+.active {
+  background-color: var(--main-color);
+  color: white;
 }
 
 .active::after {
@@ -207,112 +224,152 @@ dialog {
 }
 
 .categoryInfoSection {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
 }
 .categoryInfobox {
-    position: relative;
-    height: 100%;
-    max-height: 261px;
-    padding: 32px;
-    font-weight: bold;
-    overflow:auto;
+  position: relative;
+  height: 258px;
+  padding: 32px;
+  font-weight: bold;
+  overflow: auto;
+  box-sizing: border-box;
+  background-image: url(./assets/img/pokeball.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
 .infoboxBackgroundImg {
-    position: absolute;
-    top:0;
-    left: 0;
-    opacity: 0.15;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  height: 100%;
 }
 
 .infoRow img {
-    max-width: 50px;
+  max-width: 50px;
 }
 
 .infoRow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    z-index:1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
+
+.infoRowContentBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
 }
 
 .basicInfoLeft {
-    width:50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
 
 .basicInfoRight {
-    width:50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
 
 .pageSelector {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 0;
 }
 
 .pageSelectorBtnPrev {
-    content: "  ";
-    background-image: url(./assets/icons/arrow-left.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 40px; 
-    height: 40px;   
+  content: "  ";
+  background-image: url(./assets/icons/arrow-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
 }
 
 .pageSelectorBtnNext {
-    content: "  ";
-    background-image: url(./assets/icons/arrow-right.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 40px;  
-    height: 40px;  
+  content: "  ";
+  background-image: url(./assets/icons/arrow-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
 }
 
-.pageSelectorBtnPrev:hover, .pageSelectorBtnNext:hover {
-    filter: brightness(80%);
+.pageSelectorBtnPrev:hover,
+.pageSelectorBtnNext:hover {
+  filter: brightness(80%);
 }
 
 .pageCurrent {
-    width: 460px;
-    color: white;
-    text-shadow: 1px 1px 2px var(--color-darkgrey);
+  width: 460px;
+  color: white;
+  text-shadow: 1px 1px 2px var(--color-darkgrey);
 }
 
 .pageCurrent b {
-    color: white;
+  color: white;
 }
 
 .progressBar {
-    border-radius: 10px;
-    border:1px solid var(--color-darkgrey)
+  border-radius: 10px;
+  border: 1px solid var(--color-darkgrey);
 }
 
 .progressBarInner {
-    background-color: var(--main-color);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    padding: 1px 0;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 1px 0;
 }
 
-.evolutionName {
-    font-size: 12px;
-    margin-top: 8px;
+.pCardForm {
+  align-items: center;
 }
 
-.evolutionArrowRight {
-    height: 40px;
+.pCardForm .basicInfoRight img {
+  width: 50px;
+  height: 50px;
+}
+
+.settings {
+    width: 180px;
+    text-align: left;
+}
+
+.settingsBtn {
+    width: 24px;
+    filter: invert();
+    transition: all var(--transition);
+}
+
+.settingsBtn:hover {
+    filter: brightness(0) saturate(100%) invert(7%) sepia(15%) saturate(7367%) hue-rotate(215deg) brightness(100%) contrast(100%);
+}
+
+.searchInput {
+  width: 180px;
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px var(--site-color);
 }

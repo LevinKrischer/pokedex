@@ -82,8 +82,10 @@ header .wrapper {
 header .inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1% 4%;
+  justify-content: space-between;
+  padding: 1% 0%;
+  width: 100%;
+  max-width: 1130px;
 }
 
 .headerLogo {
