@@ -36,7 +36,7 @@ function getTemplateInformation(){
               <hr />
               <section class="categoryInfoSection">
                 <section class="categorySelector">
-                  <button onclick="showBasicInformation()" id="categoryBtnBasicInfoCard" class="categoryBtn active" autofocus>
+                  <button onclick="showBasicInformation()" id="categoryBtnBasicInfoCard" class="categoryBtn active">
                     Basic Info
                   </button>
                   <button onclick="showStatsInformation()" id="categoryBtnBaseStatsInfoCard" class="categoryBtn">

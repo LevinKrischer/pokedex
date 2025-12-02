@@ -125,12 +125,14 @@ function checkLoadMoreButton() {
 
 function openPokemonInfo(indexCard) {
   currentPokemon = indexCard;
+  document.body.style.overflow = "hidden";
   pCardDialog.showModal();
   pCardDialog.classList.add("opened");
   pCardDialog.innerHTML = getTemplateInformation();
   loadBasicInformation(currentPokemon);
   checkPrevAvailable();
   checkNextAvailable();
+  document.body.style.overflow = "";
 }
 
 function closeDialog() {
