@@ -133,7 +133,16 @@ footer .inner p {
 }
 
 .show {
-  display: block;
+  display: flex;
   opacity: 1;
+  transform: translateY(0);
   transition: opacity var(--transition);
+}
+
+dialog {
+  max-width: 90vw !important;
+}
+
+card {
+  padding: 1%;
 }

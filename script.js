@@ -360,7 +360,7 @@ function deleteSearchInput() {
   showLoadMoreBtn();
 }
 
-// function toggleSearchMobileBar() {
-//   const mobileSearchBtn = document.getElementById('searchMobile')
-//   mobileSearchBtn.classList.toggle("show");
-// }
+function toggleSearchMobileBar() {
+  const mobileSearchBtn = document.getElementById('searchBar')
+  mobileSearchBtn.classList.toggle("show");
+}
