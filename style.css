@@ -11,12 +11,9 @@
   gap: 32px;
 }
 
-.pCardImgSmall {
-  width: 100%;
-}
-
 .pCardImg {
   width: 100%;
+  transition: scale var(--transition);
 }
 
 .pInfo .pCardImg {
@@ -56,6 +53,11 @@
   scale: 1.05;
 }
 
+.card:hover .pCardImg {
+  scale: 1.4;
+  transition: scale var(--transition);
+}
+
 .pCardTypes {
   display: flex;
   align-items: center;
@@ -87,6 +89,10 @@
 
 .pId p {
   color: white;
+}
+
+.pInfo:hover .pCardImg {
+  scale: 1;
 }
 
 .pInfo {
@@ -121,6 +127,7 @@ dialog {
   top: 50%;
   left: 50%;
   max-width: 500px;
+  height:759px;
   z-index: 3;
   background: none;
   border: none;
@@ -344,32 +351,165 @@ dialog.opened {
   height: 50px;
 }
 
-.settings {
-    width: 180px;
-    text-align: left;
+.buttonHeaderLeft {
+  width: 224px;
+  text-align: left;
 }
 
-.settingsBtn {
+.headerIcon {
     width: 24px;
     filter: invert();
     transition: all var(--transition);
 }
 
-.settingsBtn:hover {
+.headerIcon:hover {
     filter: brightness(0) saturate(100%) invert(7%) sepia(15%) saturate(7367%) hue-rotate(215deg) brightness(100%) contrast(100%);
 }
 
 .searchInput {
-  width: 180px;
-  height: 32px;
+  width: 100%;
+  height: 100%;
   border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 3px;
-  padding: 0 8px;
+  padding: 0 4px;
   font-weight: bold;
+}
+
+.deleteSearchInputBtn {
+  display: none;
+  opacity: 0;
+  transition: all var(--transition);
 }
 
 .searchInput:focus {
   outline: none;
-  box-shadow: 0px 0px 10px var(--site-color);
 }
+
+.searchInput:focus + .deleteSearchInputBtn {
+  display: block;
+  opacity: 1;
+  transition: all var(--transition);
+}
+
+.searchBar {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 32px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  padding: 0 0 0 8px;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 224px;
+  width: 20%;
+}
+
+.searchOk {
+  border-radius: 8px;
+  background-color: var(--main-color);
+  margin: 4px 4px;
+  padding: 0 8px;
+  color: white;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.searchOk:hover {
+  background-color: var(--site-color);
+  color: white;
+}
+
+
+.selectorButtonPlaceholder {
+  width: 50px;
+}
+
+.loadingScreen {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffb7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:5;
+  transition: all var(--transition);
+}
+
+.loadBtn {
+  display: none;
+}
+
+.pokeball {
+  width: 100px; height: 100px;
+  border: 4px solid black;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red 50%, white 50%);
+  position: relative;
+  animation: shake 0.5s infinite;
+  margin-bottom: 32px;
+}
+
+.pokeball::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px; height: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.loadingScreen p {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--main-color)
+}
+
+.searchIcon {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .buttonHeaderLeft {
+    width: 20%;
+  }
+
+  .searchBar {
+    display: none;
+    position: absolute;
+    bottom:0;
+  }
+
+  .searchBarContainer {
+    width: 20%;
+    position: relative;
+  }
+
+  .searchIcon {
+  display: block;
+  width: 24px;
+    filter: invert();
+}
+
+}
+

@@ -1,348 +1,453 @@
 :root {
-    --fire-color: #e62828;
-    --normal-color: #9FA19F;
-    --water-color: #2980EF;
-    --grass-color: #3fa129;
-    --electric-color: #F9BF00;
-    --ice-color: #3FD8FF;
-    --fighting-color: #FF8000;
-    --poison-color: #9141CB;
-    --ground-color: #915121;
-    --flying-color: #81B8EE;
-    --psychic-color: #EF4179;
-    --bug-color: #91A119;
-    --rock-color: #B0A982;
-    --ghost-color: #704170;
-    --dragon-color: #5060E1;
-    --dark-color: #50413F;
-    --steel-color: #5FA0B6;
-    --fairy-color: #EF70EF;
+  --fire-color: #ee8130;
+  --normal-color: #a8a77a;
+  --water-color: #6390f0;
+  --grass-color: #7ac74c;
+  --electric-color: #f7d02c;
+  --ice-color: #96d9d6;
+  --fighting-color: #c22e28;
+  --poison-color: #a33ea1;
+  --ground-color: #e2bf65;
+  --flying-color: #a98ff3;
+  --psychic-color: #f95587;
+  --bug-color: #a6b91a;
+  --rock-color: #b6a136;
+  --ghost-color: #735797;
+  --dragon-color: #6f35fc;
+  --dark-color: #705746;
+  --steel-color: #b7b7ce;
+  --fairy-color: #d685ad;
 }
 
 .bg-fire {
-    background-color: var(--fire-color);
+  background-color: var(--fire-color);
 }
 
 .bg-normal {
-    background-color: var(--normal-color);
+  background-color: var(--normal-color);
 }
 
 .bg-water {
-    background-color: var(--water-color);
+  background-color: var(--water-color);
 }
 
 .bg-grass {
-    background-color: var(--grass-color);
+  background-color: var(--grass-color);
 }
 
 .bg-electric {
-    background-color: var(--electric-color);
+  background-color: var(--electric-color);
 }
 
 .bg-ice {
-    background-color: var(--ice-color);
+  background-color: var(--ice-color);
 }
 
 .bg-fighting {
-    background-color: var(--fighting-color);
+  background-color: var(--fighting-color);
 }
 
 .bg-poison {
-    background-color: var(--poison-color);
+  background-color: var(--poison-color);
 }
 
 .bg-ground {
-    background-color: var(--ground-color);
+  background-color: var(--ground-color);
 }
 
 .bg-flying {
-    background-color: var(--flying-color);
+  background-color: var(--flying-color);
 }
 
 .bg-psychic {
-    background-color: var(--psychic-color);
+  background-color: var(--psychic-color);
 }
 
 .bg-bug {
-    background-color: var(--bug-color);
+  background-color: var(--bug-color);
 }
 
 .bg-rock {
-    background-color: var(--rock-color);
+  background-color: var(--rock-color);
 }
 
 .bg-ghost {
-    background-color: var(--ghost-color);
+  background-color: var(--ghost-color);
 }
 
 .bg-dragon {
-    background-color: var(--dragon-color);
+  background-color: var(--dragon-color);
 }
 
 .bg-dark {
-    background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 .bg-steel {
-    background-color: var(--steel-color);
+  background-color: var(--steel-color);
 }
 
 .bg-fairy {
-    background-color: var(--fairy-color);
+  background-color: var(--fairy-color);
 }
 
-
 .fireType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #e62828);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fire-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .fireType:hover {
-  background-color: #e62828;
+  background-color: var(--fire-color);
 }
 
 .normalType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9fa19f);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--normal-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .normalType:hover {
-  background-color: #9fa19f;
+  background-color: var(--normal-color);
 }
 
 .waterType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #2980ef);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--water-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .waterType:hover {
-  background-color: #2980ef;
+  background-color: var(--water-color);
 }
 
 .grassType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fa129);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--grass-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .grassType:hover {
-  background-color: #3fa129;
+  background-color: var(--grass-color);
 }
 
 .electricType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #f9bf00);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--electric-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .electricType:hover {
-  background-color: #f9bf00;
+  background-color: var(--electric-color);
 }
 
 .iceType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fd8ff);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ice-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .iceType:hover {
-  background-color: #3fd8ff;
+  background-color: var(--ice-color);
 }
 
 .fightingType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ff8000);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fighting-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .fightingType:hover {
-  background-color: #ff8000;
+  background-color: var(--fighting-color);
 }
 
 .poisonType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9141cb);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--poison-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .poisonType:hover {
-  background-color: #9141cb;
+  background-color: var(--poison-color);
 }
 
 .groundType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #915121);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ground-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .groundType:hover {
-  background-color: #915121;
+  background-color: var(--ground-color);
 }
 
 .flyingType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #81b8ee);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--flying-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .flyingType:hover {
-  background-color: #81b8ee;
+  background-color: var(--flying-color);
 }
 
 .psychicType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ef4179);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--psychic-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .psychicType:hover {
-  background-color: #ef4179;
+  background-color: var(--psychic-color);
 }
 
 .bugType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #91a119);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--bug-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .bugType:hover {
-  background-color: #91a119;
+  background-color: var(--bug-color);
 }
 
 .rockType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #b0a982);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--rock-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .rockType:hover {
-  background-color: #b0a982;
+  background-color: var(--rock-color);
 }
 
 .ghostType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #704170);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ghost-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .ghostType:hover {
-  background-color: #704170;
+  background-color: var(--ghost-color);
 }
 
 .dragonType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5060e1);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--dragon-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .dragonType:hover {
-  background-color: #5060e1;
+  background-color: var(--dragon-color);
 }
 
 .darkType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #50413f);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--dark-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .darkType:hover {
-  background-color: #50413f;
+  background-color: var(--dark-color);
 }
 
 .steelType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5fa0b6);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--steel-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .steelType:hover {
-  background-color: #5fa0b6;
+  background-color: var(--steel-color);
 }
 
 .fairyType {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ef70ef);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fairy-color)
+  );
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
 .fairyType:hover {
-  background-color: #ef70ef;
+  background-color: var(--fairy-color);
 }
 
 .fireTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #e62828);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fire-color)
+  );
 }
 .normalTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9fa19f);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--normal-color)
+  );
 }
 .waterTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #2980ef);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--water-color)
+  );
 }
 .grassTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fa129);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--grass-color)
+  );
 }
 .electricTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #f9bf00);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--electric-color)
+  );
 }
 .iceTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #3fd8ff);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ice-color)
+  );
 }
 .fightingTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ff8000);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fighting-color)
+  );
 }
 .poisonTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #9141cb);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--poison-color)
+  );
 }
 .groundTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #915121);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ground-color)
+  );
 }
 .flyingTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #81b8ee);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--flying-color)
+  );
 }
 .psychicTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ef4179);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--psychic-color)
+  );
 }
 .bugTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #91a119);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--bug-color)
+  );
 }
 .rockTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #b0a982);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--rock-color)
+  );
 }
 .ghostTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #704170);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--ghost-color)
+  );
 }
 .dragonTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5060e1);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--dragon-color)
+  );
 }
 .darkTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #50413f);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--dark-color)
+  );
 }
-
 .steelTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #5fa0b6);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--steel-color)
+  );
 }
-
 .fairyTypeInfo {
-  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), #ef70ef);
-  background-color: rgb(197, 197, 197);
-  transition: all var(--transition);
+  background-image: radial-gradient(
+    circle,
+    rgba(197, 197, 197, 0),
+    var(--fairy-color)
+  );
 }

@@ -1,6 +1,6 @@
 function getTemplateCardOverview(indexCard, nameCap, imgHome, pokemon) {
     return `
-        <section onclick="openPokemonInfo(${indexCard})" id="CardOverview${indexCard}" class="card pCard ${pokemon.types[0].type.name}Type">
+        <section onclick="openPokemonInfo(${indexCard})" id="cardOverview${indexCard}" class="card pCard ${pokemon.types[0].type.name}Type">
             <div class="pId">
               <p id="idOverview${indexCard}" class="t-center"># ${indexCard + 1}</p>
             </div>
@@ -29,7 +29,6 @@ function getTemplateInformation(){
                 </div>
                 <h2 class="pInfoHeadline" id="pNameInfoCard"></h2>
                 <div class="pType" id="ttTypeInfoCard">
-    
                 </div>
               </section>
               <section class="pCardImg" id="pCardImg">
@@ -57,22 +56,26 @@ function getTemplateInformation(){
                 </section>
               </section>
               <section class="pageSelector">
-                <button
-                  id="pageSelectorBtnPrev"
-                  class="pageSelectorBtnPrev"
-                  alt=""
-                  onclick="prevPokemonPCard()"
-                ></button>
+                <div class="selectorButtonPlaceholder">
+                  <button
+                    id="pageSelectorBtnPrev"
+                    class="pageSelectorBtnPrev"
+                    alt=""
+                    onclick="prevPokemonPCard()">
+                  </button>
+                </div>
                 <div class="pageCurrent">
                   <b><span class="f-white" id="currentPage">${currentPokemon + 1}</span> of
                   <span class="f-white" id="totalPokemonsLoaded">${allPokemons.length}</b><br>loaded Pokémon</span>
                 </div>
-                <button
-                  id="pageSelectorBtnNext"
-                  class="pageSelectorBtnNext"
-                  alt=""
-                  onclick="nextPokemonPCard()"
-                ></button>
+                <div class="selectorButtonPlaceholder">
+                  <button
+                    id="pageSelectorBtnNext"
+                    class="pageSelectorBtnNext"
+                    alt=""
+                    onclick="nextPokemonPCard()">
+                  </button>
+                </div>
               </section>
             </section>
 `

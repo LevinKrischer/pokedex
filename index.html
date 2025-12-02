@@ -17,11 +17,17 @@
       <header id="header">
         <div class="wrapper">
           <div class="inner">
-            <button class="settings"><img class="settingsBtn" src="./assets/icons/settings.png" alt="Einstellungs-Symbol"></button>
+            <button class="buttonHeader buttonHeaderLeft"></button>
             <img class="headerLogo" src="./assets/img/pex-logo.png" alt="" />
-            <input type="text" name="search" id="searchBar" class="searchInput" placeholder="search by name">
-            <h1>Pokedex</h1>
-          </div>
+            <section class="searchBarContainer">
+              <button onclick="toggleSearchMobileBar()"><img class="searchIcon" src="./assets/icons/search.png" alt="search icon"></button>
+              <div class="searchBar">
+                <input type="text" name="search" id="searchInput" class="searchInput" placeholder="search by name">
+                <button onclick="deleteSearchInput()" id="deleteSearchInput" class="deleteSearchInputBtn">X</button>
+                <button onclick="searchForPokemon()" class="searchOk">go!</button>
+              </div>
+              <h1>Pokedex</h1>
+          </section>
         </div>
       </header>
       <main>
@@ -29,10 +35,15 @@
           </dialog>
         <div class="wrapper">
           <div class="inner">
-            <article id="cardOverview" class="cardOverview"></article>
+            <section class="loadingScreen" id="loadingScreen">
+              <div class="pokeball"></div>
+              <p>loading...</p>
+            </section>
+            <article id="cardOverview" class="cardOverview">
+            </article>
           </div>
           <div class="inner pt-0 d-flex flex-all-center">
-            <button id="loadMoreBtn" onclick="loadMorePokemons()" class="btn">
+            <button id="loadMoreBtn" onclick="loadMorePokemons()" class="btn loadBtn">
               load more
             </button>
           </div>

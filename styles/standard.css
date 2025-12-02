@@ -1,5 +1,5 @@
 :root {
-  --site-color: #0e1436;
+  --site-color: #202B5D;
   --font-size: 18px;
   --header-height: 100px;
   --main-color: #F31D25;
@@ -83,7 +83,7 @@ header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1% 0%;
+  padding: 1% 4%;
   width: 100%;
   max-width: 1130px;
 }
