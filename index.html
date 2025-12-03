@@ -22,13 +22,23 @@
             <section class="searchBarContainer">
               <button onclick="toggleSearchMobileBar()"><img class="searchIcon" src="./assets/icons/search.png" alt="search icon"></button>
               <div class="searchBar" id="searchBar">
-                <input type="text" name="search" id="searchInput" class="searchInput" placeholder="search by name">
-                <button onclick="deleteSearchInput()" id="deleteSearchInput" class="deleteSearchInputBtn">X</button>
-                <button onclick="searchForPokemon()" class="searchOk">go!</button>
+                <div class="searchBarInput">
+                  <input type="text" name="search" id="searchInput" class="searchInput" placeholder="search by name">
+                  <button onclick="deleteSearchInput()" id="deleteSearchInput" class="deleteSearchInputBtn">X</button>
+                  <button onclick="searchForPokemon()" class="searchOk">go!</button>
+                </div>
+                <div id="searchWarning" class="messageWarning">Insert at least 3 letters!</div>
               </div>
               <h1>Pokedex</h1>
           </section>
         </div>
+        <a
+          id="goToTop"
+          class="goToTop"
+          aria-lable="nach oben"
+          onclick="scrollUp()"
+          ><img src="./assets/icons/go-to-top.png" alt="nach oben"
+        /></a>
       </header>
       <main>
         <dialog id="pInfoDialog">
@@ -53,7 +63,7 @@
     <footer>
       <div class="wrapper">
         <div class="inner">
-          <p>Copyright 2025 - Levin Krischer</p>
+          <p>&copy 2025 - Levin Krischer</p>
         </div>
       </div>
     </footer>

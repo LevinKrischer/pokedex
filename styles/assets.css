@@ -52,3 +52,9 @@
 .f-white {
     color: white;
 }
+
+@media (max-width: 600px) {
+    .btn {
+        margin: 24px 0;
+    }
+}

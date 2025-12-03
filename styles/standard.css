@@ -138,11 +138,3 @@ footer .inner p {
   transform: translateY(0);
   transition: opacity var(--transition);
 }
-
-dialog {
-  max-width: 90vw !important;
-}
-
-card {
-  padding: 1%;
-}

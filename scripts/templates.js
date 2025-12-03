@@ -1,8 +1,8 @@
-function getTemplateCardOverview(indexCard, nameCap, imgHome, pokemon) {
+function getTemplateCardOverview(indexCard, pokeId, nameCap, imgHome, pokemon) {
     return `
         <section onclick="openPokemonInfo(${indexCard})" id="cardOverview${indexCard}" class="card pCard ${pokemon.types[0].type.name}Type">
             <div class="pId">
-              <p id="idOverview${indexCard}" class="t-center"># ${indexCard + 1}</p>
+              <p id="idOverview${indexCard}" class="t-center"># ${pokeId}</p>
             </div>
             <div id="pokeImgOverview${indexCard}" class="pCardImg">
               <img src="${imgHome}" alt="picture of ${nameCap}" />
@@ -66,7 +66,7 @@ function getTemplateInformation(){
                 </div>
                 <div class="pageCurrent">
                   <b><span class="f-white" id="currentPage">${currentPokemon + 1}</span> of
-                  <span class="f-white" id="totalPokemonsLoaded">${allPokemons.length}</b><br>loaded Pokémon</span>
+                  <span class="f-white" id="totalPokemonsLoaded">${currentData.length}</b></span>
                 </div>
                 <div class="selectorButtonPlaceholder">
                   <button
