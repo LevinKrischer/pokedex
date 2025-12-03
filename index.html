@@ -12,7 +12,7 @@
     <script defer src="./script.js"></script>
     <script src="./scripts/templates.js"></script>
   </head>
-  <body onload="getPokemonData()">
+  <body id="body" onload="getPokemonData()">
     <div class="site">
       <header id="header">
         <div class="wrapper">
@@ -41,10 +41,10 @@
         /></a>
       </header>
       <main>
-        <dialog id="pInfoDialog">
-          </dialog>
         <div class="wrapper">
           <div class="inner">
+            <dialog id="pInfoDialog">
+            </dialog>
             <section class="loadingScreen" id="loadingScreen">
               <div class="pokeball"></div>
               <p>loading...</p>

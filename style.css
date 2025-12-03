@@ -144,24 +144,32 @@
 
 dialog {
   opacity: 0;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 500px;
+  max-width: 95%;
+  background-color: #ffffff00;
+  border:none;
+  border-radius: 10px;
+  margin: auto;
+  /* max-width: 500px; */
   /* height:759px; */
-  z-index: 3;
-  background: none;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 1px 1px 16px var(--color-light);
   padding: 0;
-  transform: translate(-50%, -40%);
+  transform: translateY(100px);
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
 dialog.opened {
   opacity: 1;
-  transform: translate(-50%, -40%);
+  transform: translateY(0);
+}
+
+dialog::backdrop {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all var(--transition);
+}
+
+dialog.opened::backdrop {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3)
 }
 
 .dialogContainer {
@@ -257,13 +265,13 @@ dialog.opened {
   gap: 8px;
   height: 100%;
 }
+
 .categoryInfobox {
   position: relative;
   height: 258px;
   padding: 32px;
   font-weight: bold;
   overflow: auto;
-  box-sizing: border-box;
   background-image: url(./assets/img/pokeball.png);
   background-size: 80%;
   background-repeat: no-repeat;
@@ -297,11 +305,13 @@ dialog.opened {
 
 .basicInfoLeft {
   width: 50%;
+  min-width: 100px;
   text-align: left;
 }
 
 .basicInfoRight {
   width: 50%;
+  min-width: 100px;
   text-align: left;
 }
 
@@ -550,6 +560,11 @@ dialog.opened {
   transition: all var(--transition);
 }
 
+.noScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 @media (max-width: 960px) {
   .buttonHeaderLeft {
     width: 20%;
@@ -562,7 +577,7 @@ dialog.opened {
     position: absolute;
     bottom: -72px;
     right: 0px;
-    width: 60vw;
+    width: 200px;
     opacity: 0;
     transition: all var(--transition);
   }
@@ -582,6 +597,15 @@ dialog.opened {
 @media (max-width: 500px) {
   body {
     font-size: 16px;
+  }
+
+  .basicInfoRight img {
+    width: 18px;
+    height: 18px;
+  }
+
+  dialog {
+    margin: auto;
   }
 
   .pinfoHeader {
@@ -604,9 +628,9 @@ dialog.opened {
   }
 
   .pInfo .pCardImg {
-    min-width: 150px;
-    width: 150px;
-    height: 150px;
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
   }
 
   .card {
@@ -623,20 +647,17 @@ dialog.opened {
   }
 
   .categoryInfobox {
-    padding: 16px;
+    padding: 10px;
+    height: 200px;
   }
 
   .pType {
     justify-content: center;
   }
 
-  dialog {
-    max-width: 90vw;
-  }
-
   .pCard {
     max-width: unset;
-    width: 70vw;
+    width: 70%;
   }
 
   .goToTop {
@@ -646,5 +667,15 @@ dialog.opened {
   right:20px;
   /* right: 50%;
   bottom: 24px; */
+}
+
+.card:hover .pCardImg {
+  scale: 1.2;
+  transition: scale var(--transition);
+}
+
+.infoRowContentBox {
+  gap: 6px;
+  font-size: 14px;
 }
 }

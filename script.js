@@ -134,6 +134,7 @@ function checkLoadMoreButton() {
 }
 
 function openPokemonInfo(indexCard) {
+  bodyDeactivateScrolling();
   currentPokemon = indexCard;
   pCardDialog.showModal();
   pCardDialog.classList.add("opened");
@@ -146,6 +147,7 @@ function openPokemonInfo(indexCard) {
 function closeDialog() {
   pCardDialog.close();
   pCardDialog.classList.remove("opened");
+  bodyActivateScrolling();
   currentCategory = "Basic";
 }
 
@@ -463,3 +465,12 @@ function scrollUp() {
   document.documentElement.scrollTop = 0;
 }
 
+function bodyDeactivateScrolling() {
+  const body = document.getElementById('body');
+  body.classList.add('noScroll')
+}
+
+function bodyActivateScrolling() {
+  const body = document.getElementById('body');
+  body.classList.remove('noScroll')
+}
