@@ -92,11 +92,7 @@
 }
 
 .fireType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fire-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fire-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -105,11 +101,7 @@
 }
 
 .normalType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--normal-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--normal-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -118,11 +110,7 @@
 }
 
 .waterType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--water-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--water-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -131,11 +119,7 @@
 }
 
 .grassType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--grass-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--grass-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -144,11 +128,7 @@
 }
 
 .electricType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--electric-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--electric-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -157,11 +137,7 @@
 }
 
 .iceType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ice-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ice-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -170,11 +146,7 @@
 }
 
 .fightingType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fighting-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fighting-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -183,11 +155,7 @@
 }
 
 .poisonType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--poison-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--poison-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -196,11 +164,7 @@
 }
 
 .groundType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ground-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ground-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -209,11 +173,7 @@
 }
 
 .flyingType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--flying-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--flying-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -222,11 +182,7 @@
 }
 
 .psychicType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--psychic-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--psychic-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -235,11 +191,7 @@
 }
 
 .bugType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--bug-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--bug-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -248,11 +200,7 @@
 }
 
 .rockType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--rock-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--rock-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -261,11 +209,7 @@
 }
 
 .ghostType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ghost-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ghost-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -274,11 +218,7 @@
 }
 
 .dragonType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--dragon-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--dragon-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -287,11 +227,7 @@
 }
 
 .darkType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--dark-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--dark-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -300,11 +236,7 @@
 }
 
 .steelType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--steel-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--steel-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -313,11 +245,7 @@
 }
 
 .fairyType {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fairy-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fairy-color));
   background-color: rgb(197, 197, 197);
   transition: all var(--transition);
 }
@@ -326,128 +254,56 @@
 }
 
 .fireTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fire-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fire-color));
 }
 .normalTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--normal-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--normal-color));
 }
 .waterTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--water-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--water-color));
 }
 .grassTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--grass-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--grass-color));
 }
 .electricTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--electric-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--electric-color));
 }
 .iceTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ice-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ice-color));
 }
 .fightingTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fighting-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fighting-color));
 }
 .poisonTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--poison-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--poison-color));
 }
 .groundTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ground-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ground-color));
 }
 .flyingTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--flying-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--flying-color));
 }
 .psychicTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--psychic-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--psychic-color));
 }
 .bugTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--bug-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--bug-color));
 }
 .rockTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--rock-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--rock-color));
 }
 .ghostTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--ghost-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--ghost-color));
 }
 .dragonTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--dragon-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--dragon-color));
 }
 .darkTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--dark-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--dark-color));
 }
 .steelTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--steel-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--steel-color));
 }
 .fairyTypeInfo {
-  background-image: radial-gradient(
-    circle,
-    rgba(197, 197, 197, 0),
-    var(--fairy-color)
-  );
+  background-image: radial-gradient(circle, rgba(197, 197, 197, 0), var(--fairy-color));
 }

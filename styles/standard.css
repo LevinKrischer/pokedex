@@ -1,11 +1,12 @@
 :root {
-  --site-color: #202B5D;
-  --font-size: 18px;
+  --font-family: "Figtree", Verdana, Tahoma, sans-serif;
+  --site-color: #202b5d;
+  --font-size: 16px;
   --header-height: 100px;
-  --main-color: #F31D25;
+  --main-color: #f31d25;
   --main-color-hover: #ff676c;
-  --header-bg-color: #F31D25;
-  --footer-bg-color: #F31D25;
+  --header-bg-color: #f31d25;
+  --footer-bg-color: #f31d25;
   --footer-height: 80px;
   --color-grey: #bebebe;
   --color-darkgrey: #555555;
@@ -18,14 +19,17 @@
   margin: 0;
   scroll-behavior: smooth;
   color: #212121;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  position: relative;
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--font-size);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
@@ -36,19 +40,19 @@ h1 {
 }
 
 hr {
-  width:100%;
-  color:#212121;
+  width: 100%;
+  color: #212121;
 }
 
 button {
-  border:none;
+  border: none;
   background-color: unset;
-  width:unset;
-  height:unset;
+  width: unset;
+  height: unset;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:disabled {
@@ -58,8 +62,8 @@ button:disabled {
 button:disabled:hover {
   scale: unset;
   background-color: var(--color-darkgrey);
-  color:white;
-  cursor:auto;
+  color: white;
+  cursor: auto;
 }
 
 .wrapper {
@@ -115,7 +119,7 @@ footer .wrapper {
 }
 
 footer .inner {
-  padding:0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,7 +6,6 @@ const goTopButton = document.getElementById("goToTop");
 let loadedPokemons = 0;
 let currentCategory = "Basic";
 let currentPokemon = 0;
-let currentId = 0;
 let currentData = [];
 let maxPokemon = 200;
 
@@ -33,11 +32,9 @@ async function loadMorePokemons() {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${indexPokemon}`);
     const responseAsJson = await response.json();
     allPokemons.push(responseAsJson);
-    currentData = allPokemons;
   }
-
+  currentData = allPokemons;
   hideLoadingScreen();
-  enableLoadMoreButton();
   renderMoreCards();
 }
 
@@ -75,30 +72,20 @@ function renderCards() {
   const cardContent = document.getElementById('cardOverview');
   cardContent.innerHTML = "";
 
-  for (let indexCard = 0; indexCard < currentData.length; indexCard++) {
-    const pokemon = currentData[indexCard];
-    const imgHome = pokemon.sprites.other.home.front_default;
-    const nameCap = capitalize(pokemon.species.name);
-    const pokeId = pokemon.id;
-    cardContent.innerHTML += getTemplateCardOverview(indexCard, pokeId, nameCap, imgHome, pokemon);
-    addTypesToCardOverview(indexCard);
+  if (currentData == "") {
+    showNoResultMessage()
+  } else {
+    for (let indexCard = 0; indexCard < currentData.length; indexCard++) {
+      const pokemon = currentData[indexCard];
+      const imgHome = pokemon.sprites.other.home.front_default;
+      const nameCap = capitalize(pokemon.species.name);
+      const pokeId = pokemon.id;
+      cardContent.innerHTML += getTemplateCardOverview(indexCard, pokeId, nameCap, imgHome, pokemon);
+      addTypesToCardOverview(indexCard);
+    }
   }
   loadedPokemons = allPokemons.length;
 }
-
-// function renderSearchResults() {
-//   const cardContent = document.getElementById('cardOverview');
-//   cardContent.innerHTML = "";
-
-//   for (let indexResult = 0; indexResult < currentData.length; indexResult++) {
-//     const pokemon = currentData[indexResult];
-//     const imgHome = pokemon.sprites.other.home.front_default;
-//     const nameCap = capitalize(pokemon.species.name);
-//     cardContent.innerHTML += getTemplateCardOverview(indexResult, nameCap, imgHome, pokemon);
-//     addTypesToCardOverview(indexResult);
-//   }
-//   loadedPokemons = currentData.length;
-// }
 
 function renderMoreCards() {
   const cardContent = document.getElementById('cardOverview');
@@ -113,6 +100,7 @@ function renderMoreCards() {
     addTypesToCardOverview(indexCard);
   }
   loadedPokemons = allPokemons.length;
+  enableLoadMoreButton();
   checkLoadMoreButton();
 }
 
@@ -277,7 +265,6 @@ function removeCategoryActive() {
 }
 
 function addCategoryActive() {
-
   if (currentCategory === "Basic") {
     document.getElementById('categoryBtnBasicInfoCard').classList.add('active');
   } else if (currentCategory === "Stats") {
@@ -341,7 +328,7 @@ function checkPrevAvailable() {
 
 function searchForPokemon() {
   const searchInput = document.getElementById('searchInput').value.toLowerCase();
-  currentData = []; // Array leeren
+  currentData = [];
 
   if (searchInput.length >= 3) {
     pushResultsInArr(searchInput);
@@ -357,10 +344,10 @@ function searchForPokemon() {
 function pushResultsInArr(searchInput) {
   allPokemons.forEach(pokemon => {
 
-      if (pokemon.species.name.toLowerCase().includes(searchInput)) {
-        currentData.push(pokemon);
-      }
-    });
+    if (pokemon.species.name.toLowerCase().includes(searchInput)) {
+      currentData.push(pokemon);
+    }
+  });
 }
 
 function showInputWarning() {
@@ -372,55 +359,6 @@ function hideInputWarning() {
   messageWarning = document.getElementById('searchWarning');
   messageWarning.classList.remove('show');
 }
-
-// function searchForPokemon() {
-//   const searchInput = document.getElementById('searchInput').value.toLowerCase();
-
-//   if (searchInput.length >= 3) {
-//     for (let nameIndex = 0; nameIndex < allNames.length; nameIndex++) {
-//       const name = allNames[nameIndex];
-//       const card = document.getElementById(`cardOverview${nameIndex}`);
-
-//       if (name.includes(searchInput)) {
-//         card.classList.remove('dNone');
-//       } else {
-//         card.classList.add('dNone');
-//       }
-//     }
-
-//   } else {
-//     for (let nameIndex = 0; nameIndex < allNames.length; nameIndex++) {
-//       const card = document.getElementById(`cardOverview${nameIndex}`);
-//       card.classList.remove('dNone');
-//     }
-//   }
-//   document.getElementById('deleteSearchInput').classList.add('show');
-//   hideLoadMoreBtn();
-// }
-
-// function searchForPokemon() {
-//   const searchInput = document.getElementById('searchInput').value.toLowerCase();
-
-//   if (searchInput.length >= 3) {
-//     allNames.forEach((name, nameIndex) => {
-//       const card = document.getElementById(`cardOverview${nameIndex}`);
-//       if (name.includes(searchInput)) {
-//         card.classList.remove('dNone');
-//       } else {
-//         card.classList.add('dNone');
-//       }
-//     });
-//   } else {
-//     allNames.forEach((_, nameIndex) => {
-//       const card = document.getElementById(`cardOverview${nameIndex}`);
-//       card.classList.remove('dNone');
-//     });
-//   }
-
-//   document.getElementById('deleteSearchInput').classList.add('show');
-//   hideLoadMoreBtn();
-// }
-
 
 function deleteSearchInput() {
   document.getElementById('searchInput').value = "";
@@ -442,9 +380,9 @@ function resetOverview() {
 
 searchInput.addEventListener('input', () => {
   if (searchInput.value.trim() !== "") {
-    deleteBtn.classList.add('show');   // sichtbar machen
+    deleteBtn.classList.add('show');
   } else {
-    deleteBtn.classList.remove('show'); // wieder ausblenden
+    deleteBtn.classList.remove('show');
   }
 });
 
@@ -473,4 +411,21 @@ function bodyDeactivateScrolling() {
 function bodyActivateScrolling() {
   const body = document.getElementById('body');
   body.classList.remove('noScroll')
+}
+
+function showNoResultMessage() {
+  messageContainer = document.getElementById('emptySearchResultMessage');
+  messageContainer.classList.add('show', 'flex-col');
+}
+
+function hideNoResultMessage() {
+  messageContainer = document.getElementById('emptySearchResultMessage');
+  messageContainer.classList.remove('show', 'flex-col');
+}
+
+function loadMorePokemonEmptyResult() {
+  document.getElementById('searchInput').value = "";
+  hideNoResultMessage();
+  resetOverview();
+  loadMorePokemons();
 }

@@ -1,7 +1,3 @@
-* {
-  font-family: "Montserrat", Verdana, Tahoma, sans-serif;
-}
-
 .goToTop {
   opacity: 0;
   position: fixed;
@@ -23,134 +19,12 @@
   width: 100%;
 }
 
-.cardOverview {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-
-.pCardImg {
-  width: 100%;
-  transition: scale var(--transition);
-}
-
-.pInfo .pCardImg {
-  width: 100%;
-  height: 225px;
-}
-
-.pCardImg img {
-  width: 100%;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 16px 16px 16px 16px;
-  text-align: center;
-  width: 100%;
-  border: 1px solid #c8c7c763;
-  box-shadow: 2px 2px 6px #ffffff83;
-  transition: scale var(--transition);
-}
-
-.card h2 {
-  font-size: 20px;
-}
-
-.pCard {
-  max-width: 200px;
-  cursor: pointer;
-}
-
-.pCard:hover {
-  scale: 1.05;
-}
-
-.card:hover .pCardImg {
-  scale: 1.4;
-  transition: scale var(--transition);
-}
-
-.pCardTypes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.pCardTypes img {
-  border-radius: 50%;
-  width: 32px;
-  box-shadow: 1px 1px 5px;
-}
-
-.pId {
-  font-size: 10px;
-  font-weight: bold;
-  background-color: var(--main-color);
-  padding: 4px;
-  margin: 0 auto 0 0;
-  border: 1px solid var(--main-color);
-  box-shadow: 1px 1px 2px;
-  border-radius: 8px;
-  width: 48px;
-}
-
-.pinfoHeader .pId {
-  height: 32px;
-}
-
-.pId p {
-  color: white;
-}
-
-.pInfo:hover .pCardImg {
-  scale: 1;
-}
-
-.pInfo {
-  width: 100%;
-  max-width: 500px;
-  padding: 24px;
-}
-
-.pInfo .pId {
-  font-size: 14px;
-  width: 72px;
-  line-height: 1.5em;
-  margin: 0;
-}
-
-.pinfoHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.pInfo h2 {
-  font-size: 28px;
-  color: white;
-  text-shadow: 2px 2px 3px var(--color-darkgrey);
-}
-
 dialog {
   opacity: 0;
-  max-width: 95%;
   background-color: #ffffff00;
-  border:none;
+  border: none;
   border-radius: 10px;
   margin: auto;
-  /* max-width: 500px; */
-  /* height:759px; */
   padding: 0;
   transform: translateY(100px);
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
@@ -169,25 +43,7 @@ dialog::backdrop {
 
 dialog.opened::backdrop {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.3)
-}
-
-.dialogContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* volle Höhe */
-}
-
-.pCardImg {
-  max-width: 50%;
-}
-
-.pType {
-  width: 72px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .tooltip {
@@ -196,9 +52,8 @@ dialog.opened::backdrop {
   cursor: pointer;
 }
 
-/* Tooltip text */
 .tooltiptext {
-  visibility: hidden; /* Hidden by default */
+  visibility: hidden;
   opacity: 0;
   width: 80px;
   background-color: var(--main-color);
@@ -211,152 +66,14 @@ dialog.opened::backdrop {
   position: absolute;
   top: 110%;
   left: 50%;
-  margin-left: -40px; /* Use half of the width (130/2 = 65), to center the tooltip */
-  font-size: 12px;
-  z-index: 1; /* Ensure tooltip is displayed above content */
+  margin-left: -40px;
+  z-index: 1;
   transition: all var(--transition);
 }
 
-/* Show the tooltip text on hover */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}
-
-.categorySelector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-}
-
-.categoryBtn {
-  padding: 8px 16px;
-  background-color: white;
-  border: 2px solid var(--main-color);
-  border-radius: 20px;
-  font-weight: bold;
-  box-shadow: 1px 1px 1px var(--color-darkgrey);
-  position: relative;
-  transition: all var(--transition);
-}
-
-.categoryBtn:hover,
-.active {
-  background-color: var(--main-color);
-  color: white;
-}
-
-.active::after {
-  content: " ";
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -8px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: var(--main-color) transparent transparent transparent;
-}
-
-.categoryInfoSection {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  height: 100%;
-}
-
-.categoryInfobox {
-  position: relative;
-  height: 258px;
-  padding: 32px;
-  font-weight: bold;
-  overflow: auto;
-  background-image: url(./assets/img/pokeball.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-
-.infoboxBackgroundImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.1;
-  height: 100%;
-}
-
-.infoRow img {
-  max-width: 50px;
-}
-
-.infoRow {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1;
-}
-
-.infoRowContentBox {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 12px;
-}
-
-.basicInfoLeft {
-  width: 50%;
-  min-width: 100px;
-  text-align: left;
-}
-
-.basicInfoRight {
-  width: 50%;
-  min-width: 100px;
-  text-align: left;
-}
-
-.pageSelector {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 40px;
-  padding: 0;
-}
-
-.pageSelectorBtnPrev {
-  content: "  ";
-  background-image: url(./assets/icons/arrow-left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  width: 40px;
-  height: 40px;
-}
-
-.pageSelectorBtnNext {
-  content: "  ";
-  background-image: url(./assets/icons/arrow-right.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  width: 40px;
-  height: 40px;
-}
-
-.pageSelectorBtnPrev:hover,
-.pageSelectorBtnNext:hover {
-  filter: brightness(80%);
-}
-
-.pageCurrent {
-  width: 460px;
-  color: white;
-  text-shadow: 1px 1px 2px var(--color-darkgrey);
-}
-
-.pageCurrent b {
-  color: white;
 }
 
 .progressBar {
@@ -369,22 +86,7 @@ dialog.opened::backdrop {
   border-radius: 10px;
   color: white;
   text-align: center;
-  font-size: 14px;
   padding: 1px 0;
-}
-
-.pCardForm {
-  align-items: center;
-}
-
-.pCardForm .basicInfoRight img {
-  width: 50px;
-  height: 50px;
-}
-
-.buttonHeaderLeft {
-  width: 224px;
-  text-align: left;
 }
 
 .headerIcon {
@@ -394,8 +96,7 @@ dialog.opened::backdrop {
 }
 
 .headerIcon:hover {
-  filter: brightness(0) saturate(100%) invert(7%) sepia(15%) saturate(7367%)
-    hue-rotate(215deg) brightness(100%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(7%) sepia(15%) saturate(7367%) hue-rotate(215deg) brightness(100%) contrast(100%);
 }
 
 .searchInput {
@@ -403,7 +104,6 @@ dialog.opened::backdrop {
   height: 100%;
   border: none;
   padding: 0 4px;
-  font-weight: bold;
 }
 
 .deleteSearchInputBtn {
@@ -449,7 +149,7 @@ dialog.opened::backdrop {
   border-radius: 10px;
   box-shadow: 1px 1px 3px;
   padding: 0 0 0 8px;
-  position: relative;
+  z-index: 2;
 }
 
 .searchOk {
@@ -548,21 +248,50 @@ dialog.opened::backdrop {
   opacity: 0;
   background-color: white;
   margin-top: 4px;
-  border: 2px solid var(--site-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 1px 1px 6px white;
   padding: 4px 8px;
   text-align: center;
   position: absolute;
-  bottom: -32px;
+  top: 32px;
   left: 0;
-  font-size: 14px;
   font-weight: 600;
   color: var(--main-color);
   transition: all var(--transition);
 }
 
 .noScroll {
-  height: 100vh;
+  width:100dvw;
   overflow: hidden;
+}
+
+.noPokemonFound {
+  display: none;
+  opacity: 0;
+  text-align: center;
+  padding: 16px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  transition: opacity var(--transition);
+}
+
+.noPokemonFound p {
+  color: white;
+  font-weight: 600;
+}
+
+.noPokemonFound h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.loadMorePokemonEmptyResult {
+  font-size: var(--font-size);
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
 }
 
 @media (max-width: 960px) {
@@ -596,7 +325,7 @@ dialog.opened::backdrop {
 
 @media (max-width: 500px) {
   body {
-    font-size: 16px;
+    font-size: var(--font-size);
   }
 
   .basicInfoRight img {
@@ -606,76 +335,18 @@ dialog.opened::backdrop {
 
   dialog {
     margin: auto;
-  }
-
-  .pinfoHeader {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .pinfoHeader .pId {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 54px;
-    height: 28px;
-    line-height: 1.5em;
-    font-size: 12px;
-  }
-
-  .pInfo {
-    padding: 16px;
-  }
-
-  .pInfo .pCardImg {
-    min-width: 100px;
-    width: 100px;
-    height: 100px;
-  }
-
-  .card {
-    gap: 12px;
-  }
-
-  .categoryBtn {
-    padding: 4px 8px;
-    font-weight: 600;
+    max-height: 100dvh;
+    max-width: 100%;
   }
 
   .progressBar {
     max-height: 22px;
   }
 
-  .categoryInfobox {
-    padding: 10px;
-    height: 200px;
-  }
-
-  .pType {
-    justify-content: center;
-  }
-
-  .pCard {
-    max-width: unset;
-    width: 70%;
-  }
-
   .goToTop {
-  max-width: 40px;
-  max-height: 40px;
-  bottom: 20px;
-  right:20px;
-  /* right: 50%;
-  bottom: 24px; */
-}
-
-.card:hover .pCardImg {
-  scale: 1.2;
-  transition: scale var(--transition);
-}
-
-.infoRowContentBox {
-  gap: 6px;
-  font-size: 14px;
-}
+    max-width: 40px;
+    max-height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
