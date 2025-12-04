@@ -386,6 +386,7 @@ function toggleSearchMobileBar() {
 function resetOverview() {
   currentData = allPokemons;
   hideDeleteSearchX();
+  hideInputWarning();
   renderCards();
   showLoadMoreBtn();
 }
