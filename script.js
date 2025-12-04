@@ -276,10 +276,6 @@ function addCategoryActive() {
   };
 }
 
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 pCardDialog.addEventListener("click", (event) => {
   if (event.target === pCardDialog) {
     closeDialog();
@@ -306,40 +302,54 @@ function prevPokemonPCard() {
   checkPrevAvailable();
 }
 
-function checkNextAvailable() {
-  const nextButton = document.getElementById('pageSelectorBtnNext');
+// function searchForPokemon() {
+//   const searchInput = document.getElementById('searchInput').value.toLowerCase();
+//   currentData = [];
 
-  if (currentPokemon == currentData.length - 1) {
-    nextButton.classList.add('dNone');
-  } else {
-    nextButton.classList.remove('dNone');
-  }
-}
-
-function checkPrevAvailable() {
-  const prevButton = document.getElementById('pageSelectorBtnPrev');
-
-  if (currentPokemon == "0") {
-    prevButton.classList.add('dNone');
-  } else {
-    prevButton.classList.remove('dNone');
-  }
-}
+//   if (searchInput.length >= 3) {
+//     pushResultsInArr(searchInput);
+//     document.getElementById('deleteSearchInput').classList.add('show');
+//     hideInputWarning()
+//     renderCards();
+//     hideLoadMoreBtn();
+//   } else {
+//     showInputWarning();
+//   }
+// }
 
 function searchForPokemon() {
   const searchInput = document.getElementById('searchInput').value.toLowerCase();
   currentData = [];
+  
+  if (searchInput.length === 0) {
+    resetOverview();
+    return;
+  }
 
   if (searchInput.length >= 3) {
-    pushResultsInArr(searchInput);
-    document.getElementById('deleteSearchInput').classList.add('show');
-    hideInputWarning()
-    renderCards();
-    hideLoadMoreBtn();
+    triggerSearch(searchInput);
   } else {
     showInputWarning();
+    hideDeleteSearchX();
   }
 }
+
+function hideDeleteSearchX() {
+    document.getElementById('deleteSearchInput').classList.remove('show');
+};
+
+function showDeleteSearchX() {
+    document.getElementById('deleteSearchInput').classList.add('show');
+};
+
+function triggerSearch (searchInput) {
+    pushResultsInArr(searchInput);
+    hideInputWarning();
+    renderCards();
+    hideLoadMoreBtn();
+}
+
+document.getElementById('searchInput').addEventListener('input', searchForPokemon);
 
 function pushResultsInArr(searchInput) {
   allPokemons.forEach(pokemon => {
@@ -363,6 +373,7 @@ function hideInputWarning() {
 function deleteSearchInput() {
   document.getElementById('searchInput').value = "";
   document.getElementById('deleteSearchInput').classList.remove('show');
+  hideNoResultMessage();
   hideInputWarning();
   resetOverview();
 }
@@ -374,6 +385,7 @@ function toggleSearchMobileBar() {
 
 function resetOverview() {
   currentData = allPokemons;
+  hideDeleteSearchX();
   renderCards();
   showLoadMoreBtn();
 }
@@ -386,10 +398,6 @@ searchInput.addEventListener('input', () => {
   }
 });
 
-window.onscroll = function () {
-  showGoTopButton();
-};
-
 function showGoTopButton() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     goTopButton.classList.add("show");
@@ -401,31 +409,4 @@ function showGoTopButton() {
 function scrollUp() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-function bodyDeactivateScrolling() {
-  const body = document.getElementById('body');
-  body.classList.add('noScroll')
-}
-
-function bodyActivateScrolling() {
-  const body = document.getElementById('body');
-  body.classList.remove('noScroll')
-}
-
-function showNoResultMessage() {
-  messageContainer = document.getElementById('emptySearchResultMessage');
-  messageContainer.classList.add('show', 'flex-col');
-}
-
-function hideNoResultMessage() {
-  messageContainer = document.getElementById('emptySearchResultMessage');
-  messageContainer.classList.remove('show', 'flex-col');
-}
-
-function loadMorePokemonEmptyResult() {
-  document.getElementById('searchInput').value = "";
-  hideNoResultMessage();
-  resetOverview();
-  loadMorePokemons();
 }

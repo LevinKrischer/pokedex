@@ -28,6 +28,7 @@ dialog {
   padding: 0;
   transform: translateY(100px);
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  position: fixed;
 }
 
 dialog.opened {
@@ -261,7 +262,6 @@ dialog.opened::backdrop {
 }
 
 .noScroll {
-  width:100dvw;
   overflow: hidden;
 }
 

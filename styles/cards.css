@@ -65,6 +65,7 @@
   border-radius: 50%;
   width: 32px;
   box-shadow: 1px 1px 5px;
+  cursor: auto;
 }
 
 .pId {
@@ -129,7 +130,6 @@
 
 .categorySelector {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 8px;
   width: 100%;
@@ -179,6 +179,7 @@
   background-image: url(../assets/img/pokeball.png);
   background-size: 80%;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .infoboxBackgroundImg {
