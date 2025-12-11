@@ -81,11 +81,11 @@ function getTemplatePCardBasics(nameCap) {
   return `
       <div class="infoRow">
         <div id="pokeHeightKeyInfoCard" class="basicInfoLeft">Height:</div>
-        <div id="pokeHeightValueInfoCard" class="basicInfoRight">${allPokemons[currentPokemon].height}</div>
+        <div id="pokeHeightValueInfoCard" class="basicInfoRight">${currentData[currentPokemon].height}</div>
       </div>
       <div class="infoRow">
         <div id="pokeWeightKeyInfoCard" class="basicInfoLeft">Weight:</div>
-        <div id="pokeWeightValueInfoCard" class="basicInfoRight">${allPokemons[currentPokemon].weight}</div>
+        <div id="pokeWeightValueInfoCard" class="basicInfoRight">${currentData[currentPokemon].weight}</div>
       </div>
       <div class="infoRow">
         <div id="pokeSpeciesKeyInfoCard" class="basicInfoLeft">Species:</div>
@@ -109,37 +109,37 @@ function getTemplatePCardStats() {
       <div class="infoRow">
         <div class="basicInfoLeft">hp:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[0].base_stat}%">${allPokemons[currentPokemon].stats[0].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[0].base_stat}%">${currentData[currentPokemon].stats[0].base_stat}</div>
         </div>
       </div>
       <div class="infoRow">
         <div class="basicInfoLeft">attack:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[1].base_stat}%">${allPokemons[currentPokemon].stats[1].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[1].base_stat}%">${currentData[currentPokemon].stats[1].base_stat}</div>
         </div>
       </div>
       <div class="infoRow">
         <div class="basicInfoLeft">defense:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[2].base_stat}%">${allPokemons[currentPokemon].stats[2].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[2].base_stat}%">${currentData[currentPokemon].stats[2].base_stat}</div>
         </div>
       </div>
       <div class="infoRow">
         <div class="basicInfoLeft">special attack:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[3].base_stat}%">${allPokemons[currentPokemon].stats[3].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[3].base_stat}%">${currentData[currentPokemon].stats[3].base_stat}</div>
         </div>
       </div>
       <div class="infoRow">
         <div class="basicInfoLeft">special defense:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[4].base_stat}%">${allPokemons[currentPokemon].stats[4].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[4].base_stat}%">${currentData[currentPokemon].stats[4].base_stat}</div>
         </div>
       </div>
       <div class="infoRow">
         <div class="basicInfoLeft">speed:</div>
         <div class="basicInfoRight progressBar">
-          <div class="progressBarInner" style="width:${allPokemons[currentPokemon].stats[5].base_stat}%">${allPokemons[currentPokemon].stats[5].base_stat}</div>
+          <div class="progressBarInner" style="width:${currentData[currentPokemon].stats[5].base_stat}%">${currentData[currentPokemon].stats[5].base_stat}</div>
         </div>
       </div>
      `;

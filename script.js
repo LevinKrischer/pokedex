@@ -11,7 +11,7 @@ let maxPokemon = 200;
 
 async function getPokemonData() {
   showLoadingScreen();
-  for (let indexPokemon = 1; indexPokemon <= 20; indexPokemon++) {
+  for (let indexPokemon = 1; indexPokemon <= 40; indexPokemon++) {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${indexPokemon}`);
     let responseAsJson = await response.json();
     allPokemons.push(responseAsJson);
@@ -26,7 +26,7 @@ async function loadMorePokemons() {
   showLoadingScreen();
   disabledLoadMoreButton();
   const startIndex = loadedPokemons + 1;
-  const endIndex = loadedPokemons + 20;
+  const endIndex = loadedPokemons + 40;
 
   for (let indexPokemon = startIndex; indexPokemon <= endIndex; indexPokemon++) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${indexPokemon}`);
